@@ -7,13 +7,21 @@ namespace Code.Infrastructure.View
     {
         public EntityBehaviour EntityView;
 
-        public GameEntity Entity => EntityView != null ? EntityView.Entity : null;
-
-        private void Awake()
+        public GameEntity Entity
         {
-            if (!EntityView)
+            get
             {
-                EntityView = GetComponent<EntityBehaviour>();
+                if (EntityView == null)
+                {
+                    EntityView = GetComponent<EntityBehaviour>();
+                }
+
+                if (EntityView == null)
+                {
+                    Debug.LogError("Entity View is null");
+                }
+
+                return EntityView != null ? EntityView.Entity : null;
             }
         }
     }
