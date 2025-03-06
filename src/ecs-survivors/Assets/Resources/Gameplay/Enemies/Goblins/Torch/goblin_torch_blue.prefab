@@ -68,14 +68,6 @@ PrefabInstance:
       propertyPath: Hp
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 3082643152100645119, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
-      propertyPath: Animator
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3082643152100645119, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
-      propertyPath: SpriteRenderer
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3626643382493988023, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
       propertyPath: m_Enabled
       value: 0

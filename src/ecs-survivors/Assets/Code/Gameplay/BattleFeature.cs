@@ -1,6 +1,8 @@
 ﻿using Code.Common.Cleanup;
 using Code.Gameplay.Cameras.Provider;
 using Code.Gameplay.Common.Time;
+using Code.Gameplay.Features.Abilities;
+using Code.Gameplay.Features.Armaments;
 using Code.Gameplay.Features.DamageApplication;
 using Code.Gameplay.Features.Enemies;
 using Code.Gameplay.Features.Hero;
@@ -25,10 +27,12 @@ namespace Code.Gameplay
             
             Add(systemFactory.Create<HeroFeature>());
             Add(systemFactory.Create<EnemyFeature>());
-            
-            Add(systemFactory.Create<MovementFeature>());
-            
             Add(systemFactory.Create<DeathFeature>());
+
+            Add(systemFactory.Create<MovementFeature>());
+            Add(systemFactory.Create<AbilityFeature>());
+            
+            Add(systemFactory.Create<ArmamentFeature>());
             
             Add(systemFactory.Create<CollectTargetsFeature>());
             Add(systemFactory.Create<DamageApplicationFeature>());
