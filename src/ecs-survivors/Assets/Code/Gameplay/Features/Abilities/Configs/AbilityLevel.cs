@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Code.Gameplay.Features.Effects;
+using Code.Gameplay.Features.Statuses;
 using Code.Infrastructure.View;
 
 namespace Code.Gameplay.Features.Abilities.Configs
@@ -11,6 +12,7 @@ namespace Code.Gameplay.Features.Abilities.Configs
         public float Cooldown;
         public EntityBehaviour ViewPrefab;
         public List<EffectSetup> EffectSetups;
+        public List<StatusSetup> StatusSetups;
         public ProjectileSetup ProjectileSetup;
     }
 }

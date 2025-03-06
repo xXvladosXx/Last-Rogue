@@ -1,7 +1,7 @@
 ﻿using Code.Gameplay.Features.TargetCollection;
 using Entitas;
 
-namespace Code.Gameplay.Features.Armaments
+namespace Code.Gameplay.Features.Armaments.Systems
 {
     public class FinilizeProcessedArmamentsSystem : IExecuteSystem
     {
