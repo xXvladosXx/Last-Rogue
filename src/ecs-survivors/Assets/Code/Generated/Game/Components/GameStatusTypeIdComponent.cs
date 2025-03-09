@@ -34,20 +34,21 @@ public sealed partial class GameMatcher {
 public partial class GameEntity {
 
     public Code.Gameplay.Features.Statuses.StatusTypeIdComponent statusTypeId { get { return (Code.Gameplay.Features.Statuses.StatusTypeIdComponent)GetComponent(GameComponentsLookup.StatusTypeId); } }
+    public Code.Gameplay.Features.Statuses.StatusTypeId StatusTypeId { get { return statusTypeId.Value; } }
     public bool hasStatusTypeId { get { return HasComponent(GameComponentsLookup.StatusTypeId); } }
 
-    public GameEntity AddStatusTypeId(Code.Gameplay.Features.Statuses.StatusTypeId newStatusTypeId) {
+    public GameEntity AddStatusTypeId(Code.Gameplay.Features.Statuses.StatusTypeId newValue) {
         var index = GameComponentsLookup.StatusTypeId;
         var component = (Code.Gameplay.Features.Statuses.StatusTypeIdComponent)CreateComponent(index, typeof(Code.Gameplay.Features.Statuses.StatusTypeIdComponent));
-        component.StatusTypeId = newStatusTypeId;
+        component.Value = newValue;
         AddComponent(index, component);
         return this;
     }
 
-    public GameEntity ReplaceStatusTypeId(Code.Gameplay.Features.Statuses.StatusTypeId newStatusTypeId) {
+    public GameEntity ReplaceStatusTypeId(Code.Gameplay.Features.Statuses.StatusTypeId newValue) {
         var index = GameComponentsLookup.StatusTypeId;
         var component = (Code.Gameplay.Features.Statuses.StatusTypeIdComponent)CreateComponent(index, typeof(Code.Gameplay.Features.Statuses.StatusTypeIdComponent));
-        component.StatusTypeId = newStatusTypeId;
+        component.Value = newValue;
         ReplaceComponent(index, component);
         return this;
     }
