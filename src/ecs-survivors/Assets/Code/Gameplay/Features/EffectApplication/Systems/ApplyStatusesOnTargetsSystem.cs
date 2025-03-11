@@ -1,5 +1,6 @@
 using Code.Common.Extensions;
 using Code.Gameplay.Features.Effects.Factory;
+using Code.Gameplay.Features.Statuses.Applier;
 using Code.Gameplay.Features.Statuses.Factory;
 using Code.Gameplay.Features.Statuses.Systems;
 using Entitas;

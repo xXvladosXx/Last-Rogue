@@ -3,9 +3,12 @@ using Code.Gameplay.Cameras.Provider;
 using Code.Gameplay.Common.Time;
 using Code.Gameplay.Features.Abilities;
 using Code.Gameplay.Features.Armaments;
+using Code.Gameplay.Features.CharacterStats;
 using Code.Gameplay.Features.CharacterStats.Systems;
 using Code.Gameplay.Features.EffectApplication;
+using Code.Gameplay.Features.Effects;
 using Code.Gameplay.Features.Effects.Systems;
+using Code.Gameplay.Features.Enchants.Systems;
 using Code.Gameplay.Features.Enemies;
 using Code.Gameplay.Features.Hero;
 using Code.Gameplay.Features.Hero.Systems;
@@ -36,7 +39,8 @@ namespace Code.Gameplay
             Add(systemFactory.Create<AbilityFeature>());
             
             Add(systemFactory.Create<ArmamentFeature>());
-
+            
+            Add(systemFactory.Create<EnchantFeature>());
             Add(systemFactory.Create<EffectFeature>());
             Add(systemFactory.Create<StatusFeature>());
             Add(systemFactory.Create<StatsFeature>());

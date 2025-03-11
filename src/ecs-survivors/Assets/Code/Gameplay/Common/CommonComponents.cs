@@ -14,5 +14,6 @@ namespace Code.Gameplay.Common
     [Game] public class AnimatorDamageTakenComponent : IComponent { public IDamageTakenAnimator Value; }
     [Game] public class Damage : IComponent { public float Value; }
     [Game] public class StatusVisualsComponent : IComponent { public IStatusVisuals Value; }
+    [Game] public class Active : IComponent { }
 
 }

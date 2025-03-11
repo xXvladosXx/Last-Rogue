@@ -3,7 +3,7 @@ using Code.Common.EntityIndices;
 using Code.Common.Extensions;
 using Code.Gameplay.Features.Statuses.Factory;
 
-namespace Code.Gameplay.Features.Statuses.Systems
+namespace Code.Gameplay.Features.Statuses.Applier
 {
     public class StatusApplier : IStatusApplier
     {

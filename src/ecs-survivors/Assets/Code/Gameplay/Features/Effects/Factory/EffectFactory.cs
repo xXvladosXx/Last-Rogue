@@ -22,6 +22,8 @@ namespace Code.Gameplay.Features.Effects.Factory
                     break;
                 case EffectTypeId.Damage:
                     return CreateDamage(producerId, targetId, effectSetup.Value);
+                case EffectTypeId.Heal:
+                    return CreateHeal(producerId, targetId, effectSetup.Value);
             }
             
             throw new ArgumentOutOfRangeException();
@@ -33,6 +35,17 @@ namespace Code.Gameplay.Features.Effects.Factory
                 .AddId(_identifierService.Next())
                 .With(x => x.isEffect = true)
                 .With(x => x.isDamageEffect = true)
+                .AddEffectValue(value)
+                .AddProducerId(producerId)
+                .AddTargetId(targetId);
+        }
+
+        private GameEntity CreateHeal(int producerId, int targetId, float value)
+        {
+            return CreateEntity.Empty()
+                .AddId(_identifierService.Next())
+                .With(x => x.isEffect = true)
+                .With(x => x.isHealEffect = true)
                 .AddEffectValue(value)
                 .AddProducerId(producerId)
                 .AddTargetId(targetId);

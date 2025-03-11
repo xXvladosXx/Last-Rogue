@@ -19,13 +19,14 @@ MonoBehaviour:
     EffectSetups:
     - EffectTypeId: 1
       Value: 0
-    StatusSetups:
-    - StatusTypeId: 2
-      Value: 1
-      Duration: 5
-      Period: 1
+    StatusSetups: []
     ProjectileSetup:
+      ProjectileCount: 1
       Speed: 2
       Pierce: 11
       ContactRadius: 0.1
       Lifetime: 3
+      OrbitRadius: 0
+    AuraSetup:
+      Radius: 0
+      Interaval: 0

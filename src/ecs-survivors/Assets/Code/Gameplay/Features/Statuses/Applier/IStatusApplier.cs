@@ -1,4 +1,4 @@
-﻿namespace Code.Gameplay.Features.Statuses.Systems
+﻿namespace Code.Gameplay.Features.Statuses.Applier
 {
     public interface IStatusApplier
     {

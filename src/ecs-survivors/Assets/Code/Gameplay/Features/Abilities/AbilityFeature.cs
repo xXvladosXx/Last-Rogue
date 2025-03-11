@@ -10,6 +10,8 @@ namespace Code.Gameplay.Features.Abilities
         {
             Add(systemFactory.Create<CooldownSystem>());
             Add(systemFactory.Create<VegetableBoltAbilitySystem>());
+            Add(systemFactory.Create<OrbitingMushroomAbilitySystem>());
+            Add(systemFactory.Create<GarlicAuraAbilitySystem>());
         }
     }
 }

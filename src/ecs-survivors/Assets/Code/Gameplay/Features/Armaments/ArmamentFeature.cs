@@ -7,6 +7,7 @@ namespace Code.Gameplay.Features.Armaments
     {
         public ArmamentFeature(ISystemFactory systems)
         {
+            Add(systems.Create<FollowProducerSystem>());
             Add(systems.Create<MarkProcessedOnTargetLimitExceededSystem>());
             Add(systems.Create<FinilizeProcessedArmamentsSystem>());
         }

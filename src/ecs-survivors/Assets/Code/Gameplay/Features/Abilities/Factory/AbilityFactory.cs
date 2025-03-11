@@ -28,5 +28,25 @@ namespace Code.Gameplay.Features.Abilities.Factory
                 .With(x => x.isVegetableBoltAbility = true)
                 .PutOnCooldown();
         }
+        
+        public GameEntity CreateOrbitalMushroomAbility(int level)
+        {
+            var abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.OrbitingMushroom, level);
+            return CreateEntity.Empty()
+                .AddId(_identifierService.Next())
+                .AddAbilityId(AbilityId.OrbitingMushroom)
+                .AddCooldown(abilityLevel.Cooldown)
+                .With(x => x.isOrbitingMushroomAbility = true)
+                .PutOnCooldown();
+        }
+        
+        public GameEntity CreateGarlicAuraAbility(int level)
+        {
+            var abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.GarlicAura, level);
+            return CreateEntity.Empty()
+                .AddId(_identifierService.Next())
+                .AddAbilityId(AbilityId.GarlicAura)
+                .With(x => x.isGarlicAuraAbility = true);
+        }
     }
 }
