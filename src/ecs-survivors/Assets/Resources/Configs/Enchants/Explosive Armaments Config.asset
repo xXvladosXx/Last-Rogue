@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad8caa69c4454087bdf610f19ed8cc45, type: 3}
-  m_Name: Poison Armaments Config
+  m_Name: Explosive Armaments Config
   m_EditorClassIdentifier: 
-  TypeId: 1
-  EffectSetups: []
-  StatusSetups:
-  - StatusTypeId: 1
-    Value: 0
-    Duration: 2
-    Period: 1
-  Radius: 0
-  ViewPrefab: {fileID: 0}
+  TypeId: 2
+  EffectSetups:
+  - EffectTypeId: 1
+    Value: 3
+  StatusSetups: []
+  Radius: 2
+  ViewPrefab: {fileID: 5207353148952538408, guid: 1341d554ea3ef934da5f10cbfae07840, type: 3}

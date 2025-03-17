@@ -41,7 +41,7 @@ namespace Code.Gameplay.Features.Enemies.Systems
                     timer.ReplaceSpawnTimer(timer.SpawnTimer - _timeService.DeltaTime);
                     if (timer.SpawnTimer <= 0)
                     {
-                        timer.ReplaceSpawnTimer(StaticDataService.ENEMY_SPAWN_TIMER);
+                        timer.ReplaceSpawnTimer(6);
                         _enemyFactory.CreateEnemy(EnemyTypeId.Goblin, RandomSpawnPosition(hero.WorldPosition));
                     }
                 }

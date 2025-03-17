@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: goblin_torch_blue
       objectReference: {fileID: 0}
+    - target: {fileID: 1439855031686531578, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746527699140689763, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1835253824857810547, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -88,6 +96,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8372560596226481995, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6856359518670333204, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
     - {fileID: 2902833281619657816, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
@@ -137,7 +149,7 @@ MonoBehaviour:
   FreezeColor: {r: 0.21960784, g: 0.6392157, b: 0.74509805, a: 1}
   FreezeOutlineSize: 0.54
   FreezeOutlineSmoothness: 2.04
-  PoisonColor: {r: 0.21960784, g: 0.6392157, b: 0.74509805, a: 1}
+  PoisonColor: {r: 0.3231809, g: 0.74509805, b: 0.21960782, a: 1}
   PoisonColorIntensity: 0.412
 --- !u!1 &4452531728566216004 stripped
 GameObject:

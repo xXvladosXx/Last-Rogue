@@ -24,7 +24,8 @@ namespace Code.Gameplay.Features.TargetCollection.Systems
                     GameMatcher.ProcessedTargets,
                     GameMatcher.WorldPosition,
                     GameMatcher.Radius,
-                    GameMatcher.LayerMask));
+                    GameMatcher.LayerMask)
+                .NoneOf(GameMatcher.Dead));
         }
         
         public void Execute()
@@ -34,6 +35,12 @@ namespace Code.Gameplay.Features.TargetCollection.Systems
                 for (int i = 0; i < Mathf.Min(TargetCountInRadius(entity), entity.TargetLimit); i++)
                 {
                     var targetId = _targetCastBuffer[i].Id;
+
+                    if (_targetCastBuffer[i].isDead)
+                    {
+                        continue;
+                    }
+                    
                     if (!AlreadyProcessed(entity, targetId))
                     {
                         entity.TargetsBuffer.Add(targetId);

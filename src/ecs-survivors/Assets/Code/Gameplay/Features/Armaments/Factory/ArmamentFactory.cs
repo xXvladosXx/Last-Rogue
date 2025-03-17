@@ -3,6 +3,7 @@ using Code.Common.Entity;
 using Code.Common.Extensions;
 using Code.Gameplay.Features.Abilities;
 using Code.Gameplay.Features.Abilities.Configs;
+using Code.Gameplay.Features.Enchants;
 using Code.Gameplay.StaticData;
 using Code.Infrastructure.Identifiers;
 using UnityEngine;
@@ -62,7 +63,8 @@ namespace Code.Gameplay.Features.Armaments.Factory
                 .AddCollectTargetsInterval(setup.Interaval)
                 .AddCollectTargetsTimer(0)
                 .With(x => x.isFollowingProducer = true)
-                .AddWorldPosition(Vector3.zero);
+                .AddWorldPosition(Vector3.zero)
+                .AddName("Aura");
         }
         
         private GameEntity CreateProjectileEntity(Vector3 at, AbilityLevel abilityLevel, ProjectileSetup setup)
@@ -83,7 +85,26 @@ namespace Code.Gameplay.Features.Armaments.Factory
                 .With(x => x.isReadyToCollectTargets = true)
                 .With(x => x.isCollectingTargetContinuously = true)
                 .With(x => x.AddTargetLimit(setup.Pierce), setup.Pierce > 0)
-                .AddSelfDestructTime(abilityLevel.ProjectileSetup.Lifetime);
+                .AddSelfDestructTime(setup.Lifetime)
+                .AddName("Projectile");
+        }
+
+        public GameEntity CreateExplosion(int producerId, Vector3 at)
+        {
+            var config = _staticDataService.GetEnchantConfig(EnchantTypeId.ExplosiveArmaments);
+            return CreateEntity.Empty()
+                .AddId(_identifierService.Next())
+                .AddLayerMask(CollisionLayer.Enemy.AsMask())
+                .AddTargetsBuffer(new List<int>(TARGET_BUFFER_SIZE))
+                .AddRadius(config.Radius)
+                .With(x => x.AddEffectSetups(config.EffectSetups), !config.EffectSetups.IsNullOrEmpty())
+                .With(x => x.AddStatusSetups(config.StatusSetups), !config.StatusSetups.IsNullOrEmpty())
+                .AddViewPrefab(config.ViewPrefab)
+                .AddWorldPosition(at)
+                .AddProducerId(producerId)
+                .With(x => x.isReadyToCollectTargets = true)
+                .AddSelfDestructTime(1)
+                .AddName("Explosion");
         }
     }
 }

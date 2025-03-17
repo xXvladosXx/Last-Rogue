@@ -104,6 +104,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3360128356117953061, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7199237395352995085}
+    - targetCorrespondingSourceObject: {fileID: 3360128356117953061, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7829618077221280908}
+    - targetCorrespondingSourceObject: {fileID: 3360128356117953061, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8336854095084407000}
   m_SourcePrefab: {fileID: 100100000, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
 --- !u!1 &1186230661049640603 stripped
 GameObject:
@@ -135,3 +141,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityView: {fileID: 4330708321576961924}
+--- !u!114 &7829618077221280908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186230661049640603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323d16d6cb0044ff90075f488021ecc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EntityView: {fileID: 4330708321576961924}
+  EnchantVisuals: {fileID: 8336854095084407000}
+--- !u!114 &8336854095084407000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186230661049640603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fea46d9a21f47a1a494e6ddce632159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Renderer: {fileID: 3119518841676073077}
+  FreezeColor: {r: 0.21960784, g: 0.6392157, b: 0.74509805, a: 1}
+  FreezeOutlineSize: 3
+  FreezeOutlineSmoothness: 8
+  PoisonColor: {r: 0.32004172, g: 0.74509805, b: 0.21960782, a: 1}
+  PoisonColorIntensity: 0.6
+--- !u!212 &3119518841676073077 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1557407318731609291, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
+  m_PrefabInstance: {fileID: 4528303934580382910}
+  m_PrefabAsset: {fileID: 0}

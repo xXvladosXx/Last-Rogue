@@ -10,6 +10,7 @@ namespace Code.Gameplay.Features.TargetCollection
             Add(systemFactory.Create<CastForTargetsNoLimitSystem>());
             Add(systemFactory.Create<CastForTargetsWithLimitSystem>());
             Add(systemFactory.Create<CollectTargetsIntervalSystem>());
+            Add(systemFactory.Create<MarkReachedSystem>());
             Add(systemFactory.Create<CleanupTargetBuffersSystem>());
         }
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using Code.Common.Entity;
 using Code.Common.Extensions;
+using Code.Gameplay.Features.Enchants;
 using Code.Infrastructure.Identifiers;
 using Unity.VisualScripting;
 
@@ -27,6 +28,12 @@ namespace Code.Gameplay.Features.Statuses.Factory
                     break;
                 case StatusTypeId.Freeze:
                     status = CreateFreeze(statusSetup, producerId, targetId);
+                    break;
+                case StatusTypeId.PoisonEnchant:
+                    status = CreatePoisonEnchant(statusSetup, producerId, targetId);
+                    break;
+                case StatusTypeId.ExplosiveEnchant:
+                    status = CreateExplosiveEnchant(statusSetup, producerId, targetId);
                     break;
             }
 
@@ -60,6 +67,32 @@ namespace Code.Gameplay.Features.Statuses.Factory
                 .AddProducerId(producerId)
                 .AddTargetId(targetId)
                 .With(x => x.isFreeze = true);
+        }
+
+        private GameEntity CreatePoisonEnchant(StatusSetup statusSetup, int producerId, int targetId)
+        {
+            return CreateEntity.Empty()
+                .AddId(_identifierService.Next())
+                .AddStatusTypeId(StatusTypeId.PoisonEnchant)
+                .AddEnchantTypeId(EnchantTypeId.PoisonArmaments)
+                .AddEffectValue(statusSetup.Value)
+                .AddProducerId(producerId)
+                .AddTargetId(targetId)
+                .With(x => x.isStatus = true)
+                .With(x => x.isPoisonEnchant = true);
+        }
+
+        private GameEntity CreateExplosiveEnchant(StatusSetup statusSetup, int producerId, int targetId)
+        {
+            return CreateEntity.Empty()
+                .AddId(_identifierService.Next())
+                .AddStatusTypeId(StatusTypeId.ExplosiveEnchant)
+                .AddEnchantTypeId(EnchantTypeId.ExplosiveArmaments)
+                .AddEffectValue(statusSetup.Value)
+                .AddProducerId(producerId)
+                .AddTargetId(targetId)
+                .With(x => x.isStatus = true)
+                .With(x => x.isExplosiveEnchant = true);
         }
     }
 }
