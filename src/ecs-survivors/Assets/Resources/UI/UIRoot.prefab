@@ -303,9 +303,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4479062540669526109, guid: 854b1eef5df9ce14da78c7d43e8fe2c8, type: 3}
       propertyPath: m_Name
-      value: StatusHolder
+      value: EnchantHolder
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4479062540669526109, guid: 854b1eef5df9ce14da78c7d43e8fe2c8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5265748553914301376, guid: 854b1eef5df9ce14da78c7d43e8fe2c8, type: 3}
+    - {fileID: 7451962898164949658, guid: 854b1eef5df9ce14da78c7d43e8fe2c8, type: 3}
+    - {fileID: 6701866197891605541, guid: 854b1eef5df9ce14da78c7d43e8fe2c8, type: 3}
+    - {fileID: -2285687154906170428, guid: 854b1eef5df9ce14da78c7d43e8fe2c8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

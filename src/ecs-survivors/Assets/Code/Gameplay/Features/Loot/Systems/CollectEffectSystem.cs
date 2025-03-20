@@ -49,7 +49,7 @@ namespace Code.Gameplay.Features.Loot.Systems
             _statusApplier = statusApplier;
             _collected = game.GetGroup(GameMatcher
                 .AllOf(GameMatcher.Collected,
-                    GameMatcher.EffectSetups));
+                    GameMatcher.StatusSetups));
             
             _heroes = game.GetGroup(GameMatcher.
                 AllOf(GameMatcher.Hero,
