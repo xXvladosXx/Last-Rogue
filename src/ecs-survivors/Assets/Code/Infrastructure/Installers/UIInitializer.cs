@@ -14,7 +14,7 @@ namespace Code.Infrastructure.Installers
         {
             _windowFactory = windowFactory;
         }
-    
+
         public void Initialize()
         {
             _windowFactory.SetUIRoot(UIRoot);
