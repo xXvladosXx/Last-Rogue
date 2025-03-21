@@ -25,13 +25,16 @@ using Code.Gameplay.Windows;
 using Code.Infrastructure.AssetManagement;
 using Code.Infrastructure.Identifiers;
 using Code.Infrastructure.Loading;
+using Code.Infrastructure.Progress.Provider;
 using Code.Infrastructure.States.Factory;
 using Code.Infrastructure.States.GameStates;
 using Code.Infrastructure.States.StateMachine;
 using Code.Infrastructure.Systems;
 using Code.Infrastructure.View;
 using Code.Infrastructure.View.Factory;
+using Unity.VisualScripting;
 using Zenject;
+using IInitializable = Zenject.IInitializable;
 
 namespace Code.Infrastructure.Installers
 {
@@ -143,6 +146,7 @@ namespace Code.Infrastructure.Installers
             Container.Bind<IPhysicsService>().To<PhysicsService>().AsSingle();
             Container.Bind<ITimeService>().To<UnityTimeService>().AsSingle();
             Container.Bind<ISceneLoader>().To<SceneLoader>().AsSingle();
+            Container.Bind<IProgressProvider>().To<ProgressProvider>().AsSingle();
         }
 
         private void BindInputService()
@@ -157,8 +161,7 @@ namespace Code.Infrastructure.Installers
 
         public void Initialize()
         {
-            Container.Resolve<IStaticDataService>().LoadAll();
-            Container.Resolve<ISceneLoader>().LoadScene(Scenes.MEADOW);
+            Container.Resolve<IGameStateMachine>().Enter<BootstrapState>();
         }
     }
 }
