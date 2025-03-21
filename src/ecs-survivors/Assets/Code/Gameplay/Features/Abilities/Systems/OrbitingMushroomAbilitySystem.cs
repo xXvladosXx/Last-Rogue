@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Code.Common.Extensions;
+using Code.Gameplay.Features.Abilities.Upgrade;
 using Code.Gameplay.Features.Armaments.Factory;
 using Code.Gameplay.Features.Cooldowns.Systems;
 using Code.Gameplay.StaticData;
@@ -12,6 +13,7 @@ namespace Code.Gameplay.Features.Abilities.Systems
     {
         private readonly IStaticDataService _staticDataService;
         private readonly IArmamentFactory _armamentFactory;
+        private readonly IAbilityUpgradeService _abilityUpgradeService;
 
         private readonly List<GameEntity> _buffer = new(4);
         
@@ -19,12 +21,15 @@ namespace Code.Gameplay.Features.Abilities.Systems
         private readonly IGroup<GameEntity> _heroes;
         private readonly IGroup<GameEntity> _enemies;
 
-        public OrbitingMushroomAbilitySystem(GameContext game, IStaticDataService staticDataService,
-            IArmamentFactory armamentFactory)
+        public OrbitingMushroomAbilitySystem(GameContext game,
+            IStaticDataService staticDataService,
+            IArmamentFactory armamentFactory,
+            IAbilityUpgradeService abilityUpgradeService)
         {
             _staticDataService = staticDataService;
             _armamentFactory = armamentFactory;
-            
+            _abilityUpgradeService = abilityUpgradeService;
+
             _abilities = game.GetGroup(GameMatcher
                 .AllOf(GameMatcher.OrbitingMushroomAbility,
                     GameMatcher.CooldownUp));
@@ -40,13 +45,14 @@ namespace Code.Gameplay.Features.Abilities.Systems
             {
                 foreach (var hero in _heroes)
                 {
-                    var abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.OrbitingMushroom, 1);
+                    var level = _abilityUpgradeService.GetAbilityLevel(AbilityId.OrbitingMushroom);
+                    var abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.OrbitingMushroom, level);
                     var projectileCount = abilityLevel.ProjectileSetup.ProjectileCount;
 
                     for (int i = 0; i < projectileCount; i++)
                     {
                         var phase = 2 * Mathf.PI * i / projectileCount;
-                        CreateProjectile(hero, phase);
+                        CreateProjectile(hero, phase, level);
                     }
                     
                     ability.PutOnCooldown(abilityLevel.Cooldown);
@@ -54,9 +60,9 @@ namespace Code.Gameplay.Features.Abilities.Systems
             }
         }
 
-        private void CreateProjectile(GameEntity hero, float phase)
+        private void CreateProjectile(GameEntity hero, float phase, int level)
         {
-            _armamentFactory.CreateOrbitalMushroom(1, hero.WorldPosition + Vector3.up, phase)
+            _armamentFactory.CreateOrbitalMushroom(level, hero.WorldPosition + Vector3.up, phase)
                 .AddProducerId(hero.Id)
                 .AddOrbitCenterPosition(hero.WorldPosition)
                 .AddOrbitCenterFollowTarget(hero.Id)

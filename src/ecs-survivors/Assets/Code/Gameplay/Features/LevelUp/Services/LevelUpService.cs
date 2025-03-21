@@ -38,6 +38,10 @@ namespace Code.Gameplay.Features.LevelUp.Services
                     CreateEntity.Empty()
                         .isLevelUp = true;
                 }
+                else
+                {
+                    break;
+                }
             }
         }
     }

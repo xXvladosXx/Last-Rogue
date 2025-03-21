@@ -19,7 +19,7 @@ namespace Code.Gameplay.Features.LevelUp.Factory
             _assetProvider = assetProvider;
         }
 
-        public AbilityCard AbilityCard(Transform parent) => 
+        public AbilityCard CreateAbilityCard(Transform parent) => 
             _instantiator.InstantiatePrefabForComponent<AbilityCard>(_assetProvider.LoadAsset<AbilityCard>(ABILITY_CARD_PREFAB_PATH), parent);
     }
 }

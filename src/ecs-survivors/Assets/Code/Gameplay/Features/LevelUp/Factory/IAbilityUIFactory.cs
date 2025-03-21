@@ -5,6 +5,6 @@ namespace Code.Gameplay.Features.LevelUp.Factory
 {
     public interface IAbilityUIFactory
     {
-        AbilityCard AbilityCard(Transform parent);
+        AbilityCard CreateAbilityCard(Transform parent);
     }
 }
