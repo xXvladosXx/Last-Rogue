@@ -3,7 +3,7 @@ using Code.Gameplay.Common.Time;
 using Code.Gameplay.Windows;
 using Entitas;
 
-namespace Code.Gameplay.Features.LevelUp
+namespace Code.Gameplay.Features.LevelUp.Systems
 {
     public class StopTimeOnLevelUpSystem : ReactiveSystem<GameEntity>
     {

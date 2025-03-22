@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Code.Meta.UI.HUD
+namespace Code.Gameplay.Meta.UI.HUD
 {
     public class HomeHUD : MonoBehaviour
     {

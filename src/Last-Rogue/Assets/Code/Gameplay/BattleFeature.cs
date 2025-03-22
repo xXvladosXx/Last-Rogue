@@ -8,6 +8,7 @@ using Code.Gameplay.Features.CharacterStats.Systems;
 using Code.Gameplay.Features.EffectApplication;
 using Code.Gameplay.Features.Effects;
 using Code.Gameplay.Features.Effects.Systems;
+using Code.Gameplay.Features.Enchants;
 using Code.Gameplay.Features.Enchants.Systems;
 using Code.Gameplay.Features.Enemies;
 using Code.Gameplay.Features.Hero;

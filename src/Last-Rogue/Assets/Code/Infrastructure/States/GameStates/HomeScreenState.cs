@@ -1,4 +1,4 @@
-using Code.Infrastructure.Meta;
+using Code.Gameplay.Meta;
 using Code.Infrastructure.States.StateInfrastructure;
 using Code.Infrastructure.Systems;
 

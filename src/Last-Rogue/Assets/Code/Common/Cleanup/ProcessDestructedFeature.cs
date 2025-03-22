@@ -8,6 +8,9 @@ namespace Code.Common.Cleanup
         public ProcessDestructedFeature(ISystemFactory systemFactory)
         {
             Add(systemFactory.Create<SelfDestructTimerSystem>());
+            
+            Add(systemFactory.Create<CleanupMetaDestructedSystem>());
+
             Add(systemFactory.Create<CleanupGameDestructedViewsSystem>());
             Add(systemFactory.Create<CleanupGameDestructedSystem>());
         }
