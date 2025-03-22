@@ -2,9 +2,10 @@
 using Code.Common.Entity;
 using Code.Gameplay.Common.Time;
 using Code.Gameplay.Meta.Features.AfkGain.Configs;
-using Code.Gameplay.Meta.Simulation;
+using Code.Gameplay.Meta.Features.Simulation;
 using Code.Infrastructure.Progress.Data;
 using Code.Infrastructure.Progress.Provider;
+using Code.Infrastructure.Progress.SaveLoad;
 using Code.Infrastructure.States.StateInfrastructure;
 using Code.Infrastructure.States.StateMachine;
 using Code.Infrastructure.Systems;
@@ -17,20 +18,23 @@ namespace Code.Infrastructure.States.GameStates
         private readonly IProgressProvider _progressProvider;
         private readonly ISystemFactory _systemFactory;
         private readonly ITimeService _timeService;
+        private readonly ISaveLoadService _saveLoadService;
 
-        private TimeSpan _twoDays = TimeSpan.FromDays(2);
+        private readonly TimeSpan _twoDays = TimeSpan.FromDays(2);
         
         private ActualizationFeature _actualizationFeature;
 
         public ActualizeProgressState(IGameStateMachine stateMachine,
             IProgressProvider progressProvider,
             ISystemFactory systemFactory,
-            ITimeService timeService)
+            ITimeService timeService,
+            ISaveLoadService saveLoadService)
         {
             _stateMachine = stateMachine;
             _progressProvider = progressProvider;
             _systemFactory = systemFactory;
             _timeService = timeService;
+            _saveLoadService = saveLoadService;
         }
         
         public void Enter()
@@ -43,10 +47,6 @@ namespace Code.Infrastructure.States.GameStates
 
         private void ActualizeProgress(ProgressData progressData)
         {
-            CreateMetaEntity.Empty()
-                .AddGoldGainBoost(1)
-                .AddDuration((float) TimeSpan.FromDays(2).TotalSeconds);
-            
             _actualizationFeature.Initialize();
             var until = GetLimitedUntilTime(progressData);
 
@@ -60,6 +60,7 @@ namespace Code.Infrastructure.States.GameStates
             }
             
             progressData.LastSimulationTickTime = _timeService.UtcNow;
+            _saveLoadService.SaveProgress();
         }
 
         public void Exit()

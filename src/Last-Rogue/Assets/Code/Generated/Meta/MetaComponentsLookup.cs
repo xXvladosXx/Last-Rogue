@@ -6,6 +6,9 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using Code.Gameplay.Meta.Features.Simulation;
+
 public static class MetaComponentsLookup {
 
     public const int Destructed = 0;
@@ -33,8 +36,8 @@ public static class MetaComponentsLookup {
         typeof(Code.Gameplay.Meta.Features.Storage.Gold),
         typeof(Code.Gameplay.Meta.Features.Storage.GoldPerSecond),
         typeof(Code.Gameplay.Meta.Features.Storage.Storage),
-        typeof(Code.Gameplay.Meta.Simulation.Duration),
-        typeof(Code.Gameplay.Meta.Simulation.GoldGainBoost),
-        typeof(Code.Gameplay.Meta.Simulation.Tick)
+        typeof(Duration),
+        typeof(GoldGainBoost),
+        typeof(Tick)
     };
 }

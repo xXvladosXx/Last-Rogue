@@ -2,7 +2,7 @@
 using Code.Gameplay.Common.Time;
 using Code.Infrastructure.Systems;
 
-namespace Code.Gameplay.Meta.Simulation.Systems
+namespace Code.Gameplay.Meta.Features.Simulation.Systems
 {
     public class EmitTickSystem : TimerExecuteSystem
     {

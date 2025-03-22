@@ -6,6 +6,9 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using Code.Gameplay.Meta.Features.Simulation;
+
 public sealed partial class MetaMatcher {
 
     static Entitas.IMatcher<MetaEntity> _matcherTick;
@@ -33,13 +36,13 @@ public sealed partial class MetaMatcher {
 //------------------------------------------------------------------------------
 public partial class MetaEntity {
 
-    public Code.Gameplay.Meta.Simulation.Tick tick { get { return (Code.Gameplay.Meta.Simulation.Tick)GetComponent(MetaComponentsLookup.Tick); } }
+    public Tick tick { get { return (Tick)GetComponent(MetaComponentsLookup.Tick); } }
     public float Tick { get { return tick.Value; } }
     public bool hasTick { get { return HasComponent(MetaComponentsLookup.Tick); } }
 
     public MetaEntity AddTick(float newValue) {
         var index = MetaComponentsLookup.Tick;
-        var component = (Code.Gameplay.Meta.Simulation.Tick)CreateComponent(index, typeof(Code.Gameplay.Meta.Simulation.Tick));
+        var component = (Tick)CreateComponent(index, typeof(Tick));
         component.Value = newValue;
         AddComponent(index, component);
         return this;
@@ -47,7 +50,7 @@ public partial class MetaEntity {
 
     public MetaEntity ReplaceTick(float newValue) {
         var index = MetaComponentsLookup.Tick;
-        var component = (Code.Gameplay.Meta.Simulation.Tick)CreateComponent(index, typeof(Code.Gameplay.Meta.Simulation.Tick));
+        var component = (Tick)CreateComponent(index, typeof(Tick));
         component.Value = newValue;
         ReplaceComponent(index, component);
         return this;

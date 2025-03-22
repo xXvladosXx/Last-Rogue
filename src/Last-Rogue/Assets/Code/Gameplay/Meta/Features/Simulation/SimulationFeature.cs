@@ -1,8 +1,7 @@
-﻿using Code.Gameplay.Meta.Features.AfkGain.Configs;
-using Code.Gameplay.Meta.Simulation.Systems;
+﻿using Code.Gameplay.Meta.Features.Simulation.Systems;
 using Code.Infrastructure.Systems;
 
-namespace Code.Gameplay.Meta.Simulation
+namespace Code.Gameplay.Meta.Features.Simulation
 {
     public sealed class SimulationFeature : Feature
     {

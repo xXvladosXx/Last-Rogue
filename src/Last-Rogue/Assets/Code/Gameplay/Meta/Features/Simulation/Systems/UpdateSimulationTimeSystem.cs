@@ -1,7 +1,7 @@
 ﻿using Code.Infrastructure.Progress.Provider;
 using Entitas;
 
-namespace Code.Gameplay.Meta.Simulation.Systems
+namespace Code.Gameplay.Meta.Features.Simulation.Systems
 {
     public class UpdateSimulationTimeSystem : IExecuteSystem
     {

@@ -6,6 +6,8 @@ namespace Code.Gameplay.Meta.Features.AfkGain.Configs
     public class AfkGainConfig : ScriptableObject
     {
         public float GainGoldPerSecond = 1f;
-        public const float SIMULATION_TICK = 1;
+        
+        public const float SIMULATION_TICK = 1f;
+        public const float AUTOSAVE_PROGRESS_TIME = 1f;
     }
 }

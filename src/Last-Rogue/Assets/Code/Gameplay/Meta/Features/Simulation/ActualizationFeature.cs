@@ -1,7 +1,7 @@
 ﻿using Code.Common.Cleanup;
 using Code.Infrastructure.Systems;
 
-namespace Code.Gameplay.Meta.Simulation
+namespace Code.Gameplay.Meta.Features.Simulation
 {
     public sealed class ActualizationFeature : Feature
     {

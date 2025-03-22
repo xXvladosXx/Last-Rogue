@@ -25,7 +25,9 @@ using Code.Gameplay.Windows;
 using Code.Infrastructure.AssetManagement;
 using Code.Infrastructure.Identifiers;
 using Code.Infrastructure.Loading;
+using Code.Infrastructure.Progress;
 using Code.Infrastructure.Progress.Provider;
+using Code.Infrastructure.Progress.SaveLoad;
 using Code.Infrastructure.States.Factory;
 using Code.Infrastructure.States.GameStates;
 using Code.Infrastructure.States.StateMachine;
@@ -57,6 +59,12 @@ namespace Code.Infrastructure.Installers
             BindCameraProvider();
             BindGameplayFactories();
             BindEntityIndices();
+            BindProgressServices();
+        }
+
+        public void Initialize()
+        {
+            Container.Resolve<IGameStateMachine>().Enter<BootstrapState>();
         }
 
         private void BindStateMachine()
@@ -72,7 +80,7 @@ namespace Code.Infrastructure.Installers
         private void BindGameStates()
         {
             Container.BindInterfacesAndSelfTo<BootstrapState>().AsSingle();
-            Container.BindInterfacesAndSelfTo<InitializeProgressState>().AsSingle();
+            Container.BindInterfacesAndSelfTo<LoadProgressState>().AsSingle();
             Container.BindInterfacesAndSelfTo<ActualizeProgressState>().AsSingle();
             Container.BindInterfacesAndSelfTo<LoadingHomeScreenState>().AsSingle();
             Container.BindInterfacesAndSelfTo<HomeScreenState>().AsSingle();
@@ -80,7 +88,7 @@ namespace Code.Infrastructure.Installers
             Container.BindInterfacesAndSelfTo<BattleEnterState>().AsSingle();
             Container.BindInterfacesAndSelfTo<BattleLoopState>().AsSingle();
         }
-        
+
         private void BindEntityIndices()
         {
             Container.BindInterfacesAndSelfTo<GameEntityIndices>().AsSingle();
@@ -149,7 +157,6 @@ namespace Code.Infrastructure.Installers
             Container.Bind<IPhysicsService>().To<PhysicsService>().AsSingle();
             Container.Bind<ITimeService>().To<UnityTimeService>().AsSingle();
             Container.Bind<ISceneLoader>().To<SceneLoader>().AsSingle();
-            Container.Bind<IProgressProvider>().To<ProgressProvider>().AsSingle();
         }
 
         private void BindInputService()
@@ -162,9 +169,10 @@ namespace Code.Infrastructure.Installers
             Container.Bind<IWindowService>().To<WindowService>().AsSingle();
         }
 
-        public void Initialize()
+        private void BindProgressServices()
         {
-            Container.Resolve<IGameStateMachine>().Enter<BootstrapState>();
+            Container.Bind<IProgressProvider>().To<ProgressProvider>().AsSingle();
+            Container.Bind<ISaveLoadService>().To<SaveLoadService>().AsSingle();
         }
     }
 }
