@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b92375916c34b13b4ff3e64454d1aeb, type: 3}
+  m_Name: ScatteringFireballChild
+  m_EditorClassIdentifier: 
+  AbilityId: 6
+  Levels:
+  - Icon: {fileID: 0}
+    Description: 
+    Cooldown: 1
+    ViewPrefab: {fileID: 3921235629184578821, guid: 2349d0850d5c15c48aa1dfa7e580a039, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 3
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 11
+      Speed: 7
+      Pierce: 2
+      ContactRadius: 1
+      Lifetime: 15
+      OrbitRadius: 0
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 0
+      Interaval: 0

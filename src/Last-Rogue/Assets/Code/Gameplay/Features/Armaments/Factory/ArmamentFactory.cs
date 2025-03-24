@@ -79,7 +79,26 @@ namespace Code.Gameplay.Features.Armaments.Factory
                 .With(x => x.isRotatesAroundCenter = true)
                 .With(x => x.isShovelRadialStrikeAbility = true);
         }
-        
+
+        public GameEntity CreateMainFireball(int level, Vector3 at)
+        {
+            AbilityLevel abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.ScatteringFireball, level);
+            ProjectileSetup setup = abilityLevel.ProjectileSetup;
+      
+            return CreateProjectileEntity(at, abilityLevel, setup)
+                .AddParentAbility(AbilityId.ScatteringFireball)
+                .With(x => x.isScatteringFireballArmament = true);
+        }
+
+        public GameEntity CreateChildFireball(int level, Vector3 at)
+        {
+            AbilityLevel abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.ScatteringFireballChild, level);
+            ProjectileSetup setup = abilityLevel.ProjectileSetup;
+
+            return CreateProjectileEntity(at, abilityLevel, setup)
+                .AddParentAbility(AbilityId.ScatteringFireball);
+        }
+
         private GameEntity CreateProjectileEntity(Vector3 at, AbilityLevel abilityLevel, ProjectileSetup setup)
         {
             return CreateEntity.Empty()

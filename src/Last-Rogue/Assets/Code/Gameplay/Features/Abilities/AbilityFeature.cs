@@ -14,6 +14,8 @@ namespace Code.Gameplay.Features.Abilities
             Add(systemFactory.Create<OrbitingMushroomAbilitySystem>());
             Add(systemFactory.Create<GarlicAuraAbilitySystem>());
             Add(systemFactory.Create<ShovelRadialStrikeAbilitySystem>());
+            Add(systemFactory.Create<LaunchScatteringFireballAbilitySystem>());
+            Add(systemFactory.Create<ScheduledProcessForScatteringFireballSystem>());
         }
     }
 }

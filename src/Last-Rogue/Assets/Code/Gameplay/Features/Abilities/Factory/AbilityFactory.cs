@@ -62,5 +62,17 @@ namespace Code.Gameplay.Features.Abilities.Factory
                 .With(x => x.isShovelRadialStrikeAbility = true)
                 .PutOnCooldown();
         }    
+        
+        public GameEntity CreateScatteringFireballAbility(int level)
+        {
+            var abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.ScatteringFireball, level);
+      
+            return CreateEntity.Empty()
+                .AddId(_identifierService.Next())
+                .AddAbilityId(AbilityId.ScatteringFireball)
+                .AddCooldown(abilityLevel.Cooldown)
+                .With(x => x.isScatteringFireballAbility = true)
+                .PutOnCooldown();
+        }
     }
 }

@@ -28,6 +28,7 @@ namespace Code.Gameplay.Features.Hero.Systems
         {
             _abilityUpgradeService.InitializeAbility(AbilityId.VegetableBolt);
             _abilityUpgradeService.InitializeAbility(AbilityId.ShovelRadialStrike);
+            _abilityUpgradeService.InitializeAbility(AbilityId.ScatteringFireball);
         }
     }
 }

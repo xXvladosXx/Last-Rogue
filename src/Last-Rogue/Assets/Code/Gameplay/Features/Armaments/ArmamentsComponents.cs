@@ -11,4 +11,5 @@ namespace Code.Gameplay.Features.Armaments
     [Game] public class StatusSetups : IComponent { public List<StatusSetup> Value; }
     [Game] public class Processed : IComponent { }
     [Game] public class FollowingProducer : IComponent { }
+    [Game] public class ScatteringFireballArmament : IComponent { }
 }

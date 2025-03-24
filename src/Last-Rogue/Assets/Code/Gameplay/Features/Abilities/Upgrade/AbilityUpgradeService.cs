@@ -8,12 +8,12 @@ namespace Code.Gameplay.Features.Abilities.Upgrade
 {
     public class AbilityUpgradeService : IAbilityUpgradeService
     {
-        private const int MinRepeatedAbilitiesToOffer = 1;
-        private const int MaxCardsToOffer = 2;
-
         private readonly Dictionary<AbilityId, int> _currentAbilities;
         private readonly IRandomService _random;
         private readonly IAbilityFactory _abilityFactory;
+
+        private const int MIN_REPEATED_ABILITIES_TO_OFFER = 1;
+        private const int MAX_CARDS_TO_OFFER = 2;
 
         public AbilityUpgradeService(IRandomService randomService, IAbilityFactory abilityFactory)
         {
@@ -23,9 +23,7 @@ namespace Code.Gameplay.Features.Abilities.Upgrade
         }
 
         public int GetAbilityLevel(AbilityId abilityId) =>
-            _currentAbilities.TryGetValue(abilityId, out int level)
-                ? level
-                : 0;
+            _currentAbilities.GetValueOrDefault(abilityId, 0);
 
         public void InitializeAbility(AbilityId ability)
         {
@@ -46,6 +44,9 @@ namespace Code.Gameplay.Features.Abilities.Upgrade
                 case AbilityId.ShovelRadialStrike:
                     _abilityFactory.CreateShovelRadialStrikeAbility(1);
                     break;
+                case AbilityId.ScatteringFireball:
+                    _abilityFactory.CreateScatteringFireballAbility(1);
+                    break;
                 default:
                     throw new Exception($"Ability {ability} is not defined");
             }
@@ -61,9 +62,9 @@ namespace Code.Gameplay.Features.Abilities.Upgrade
 
         public List<AbilityUpgradeOption> GetUpgradeOptions()
         {
-            int repeatedAbilitiesToReturnCount = MinRepeatedAbilitiesToOffer +
-                                                 _random.Range(0, Math.Min(_currentAbilities.Count, MaxCardsToOffer));
-            int newAbilitiesToReturnCount = Math.Min(MaxCardsToOffer - repeatedAbilitiesToReturnCount,
+            int repeatedAbilitiesToReturnCount = MIN_REPEATED_ABILITIES_TO_OFFER +
+                                                 _random.Range(0, Math.Min(_currentAbilities.Count, MAX_CARDS_TO_OFFER));
+            int newAbilitiesToReturnCount = Math.Min(MAX_CARDS_TO_OFFER - repeatedAbilitiesToReturnCount,
                 UnacquiredAbilities().Count);
 
             List<AbilityUpgradeOption> upgradeOptions = GetRandomRepeatedAbilities(repeatedAbilitiesToReturnCount);

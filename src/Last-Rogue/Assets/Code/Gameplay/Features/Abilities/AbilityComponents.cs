@@ -1,4 +1,5 @@
-﻿using Entitas;
+﻿using System.Collections.Generic;
+using Entitas;
 using Entitas.CodeGeneration.Attributes;
 
 namespace Code.Gameplay.Features.Abilities
@@ -13,5 +14,8 @@ namespace Code.Gameplay.Features.Abilities
         [Game] public class UpgradeRequest : IComponent { }
         [Game] public class RecreatedOnUpgrade : IComponent { }
         [Game] public class ShovelRadialStrikeAbility : IComponent { }
+        [Game] public class ScatteringFireballAbility : IComponent { }
+        [Game] public class ScheduledToProcessByArmaments : IComponent { public List<int> Value; }
+        [Game] public class ProcessedByArmaments: IComponent { public List<int> Value; }
     }
 }

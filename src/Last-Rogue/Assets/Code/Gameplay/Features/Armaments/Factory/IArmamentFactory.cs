@@ -10,5 +10,7 @@ namespace Code.Gameplay.Features.Armaments.Factory
         GameEntity CreateEffectAura(AbilityId parentAbilityId, int producerId, int level);
         GameEntity CreateExplosion(int producerId, Vector3 at);
         GameEntity CreateShovelBolt(int level, Vector3 at);
+        GameEntity CreateMainFireball(int level, Vector3 at);
+        GameEntity CreateChildFireball(int level, Vector3 at);
     }
 }

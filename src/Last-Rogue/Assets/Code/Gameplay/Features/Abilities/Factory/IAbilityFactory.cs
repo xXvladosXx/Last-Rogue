@@ -6,5 +6,6 @@ namespace Code.Gameplay.Features.Abilities.Factory
         GameEntity CreateOrbitalMushroomAbility(int level);
         GameEntity CreateGarlicAuraAbility();
         GameEntity CreateShovelRadialStrikeAbility(int level);
+        GameEntity CreateScatteringFireballAbility(int level);
     }
 }

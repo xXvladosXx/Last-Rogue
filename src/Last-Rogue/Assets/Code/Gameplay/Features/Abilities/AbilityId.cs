@@ -7,5 +7,7 @@
         OrbitingMushroom = 2,
         GarlicAura = 3,
         ShovelRadialStrike = 4,
+        ScatteringFireball = 5,
+        ScatteringFireballChild = 6
     }
 }
