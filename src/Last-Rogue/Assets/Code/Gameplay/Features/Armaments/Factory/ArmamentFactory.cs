@@ -121,12 +121,12 @@ namespace Code.Gameplay.Features.Armaments.Factory
                 .AddName("Projectile");
         }
 
-        public GameEntity CreateExplosion(int producerId, Vector3 at)
+        public GameEntity CreateExplosion(int producerId, Vector3 at, CollisionLayer collisionLayer)
         {
             var config = _staticDataService.GetEnchantConfig(EnchantTypeId.ExplosiveArmaments);
             return CreateEntity.Empty()
                 .AddId(_identifierService.Next())
-                .AddLayerMask(CollisionLayer.Enemy.AsMask())
+                .AddLayerMask(collisionLayer.AsMask())
                 .AddTargetsBuffer(new List<int>(TARGET_BUFFER_SIZE))
                 .AddRadius(config.Radius)
                 .With(x => x.AddEffectSetups(config.EffectSetups), !config.EffectSetups.IsNullOrEmpty())

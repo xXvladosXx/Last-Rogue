@@ -2,7 +2,7 @@
 
 namespace Code.Meta.UI.Shop.Items
 {
-    [CreateAssetMenu(fileName = "shopItemConfig", menuName = "ECS Survivors/ShopItem Config")]
+    [CreateAssetMenu(menuName = "Last Rogue/ShopItem Config", fileName = "shopItemConfig")]
     public class ShopItemConfig : ScriptableObject
     {
         public ShopItemId ShopItemId;

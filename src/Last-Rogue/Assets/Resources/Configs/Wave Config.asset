@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f3a10ea0ed4f3aa3e48ead09de43dd, type: 3}
+  m_Name: Wave Config
+  m_EditorClassIdentifier: 
+  Waves:
+  - EnemySpawnInterval: 1
+    Enemies:
+    - EnemyCount: 5
+      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
+    - EnemyCount: 3
+      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
+  - EnemySpawnInterval: 0.5
+    Enemies:
+    - EnemyCount: 10
+      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
+    - EnemyCount: 15
+      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
+    - EnemyCount: 5
+      EnemyConfig: {fileID: 11400000, guid: 2052d000bd1ab1244a60bc9775a08a37, type: 2}
+    - EnemyCount: 20
+      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}

@@ -27,7 +27,6 @@ MonoBehaviour:
       ProjectileAmountPerShoot: 1
       Speed: 2
       Pierce: 0
-      MaxTargetsAmount: 111
       ContactRadius: 0.1
       Lifetime: 3
       OrbitRadius: 1
@@ -48,7 +47,6 @@ MonoBehaviour:
       ProjectileAmountPerShoot: 1
       Speed: 2
       Pierce: 0
-      MaxTargetsAmount: 1
       ContactRadius: 0.1
       Lifetime: 3
       OrbitRadius: 1

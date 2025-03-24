@@ -1,7 +1,10 @@
-﻿using Code.Common.Extensions;
+﻿using System.Linq;
+using Code.Common.Extensions;
 using Code.Gameplay.Cameras.Provider;
 using Code.Gameplay.Common.Time;
 using Code.Gameplay.Features.Enemies.Factory;
+using Code.Gameplay.Features.Enemies.Services;
+using Code.Gameplay.Features.Enemies.Services.Wave;
 using Code.Gameplay.StaticData;
 using Entitas;
 using UnityEngine;
@@ -14,17 +17,21 @@ namespace Code.Gameplay.Features.Enemies.Systems
         private readonly ITimeService _timeService;
         private readonly IEnemyFactory _enemyFactory;
         private readonly ICameraProvider _cameraProvider;
+        private readonly IWaveCounter _waveCounter;
+        
         private readonly IGroup<GameEntity> _timers;
         private readonly IGroup<GameEntity> _heroes;
 
         private const float SPAWN_DISTANCE_GAP = 0.5f;
 
         public EnemySpawnSystem(GameContext game, ITimeService timeService,
-            IEnemyFactory enemyFactory, ICameraProvider cameraProvider)
+            IEnemyFactory enemyFactory, ICameraProvider cameraProvider,
+            IWaveCounter waveCounter)
         {
             _timeService = timeService;
             _enemyFactory = enemyFactory;
             _cameraProvider = cameraProvider;
+            _waveCounter = waveCounter;
 
             _timers = game.GetGroup(GameMatcher.SpawnTimer);
             _heroes = game.GetGroup(GameMatcher
@@ -39,13 +46,19 @@ namespace Code.Gameplay.Features.Enemies.Systems
                 foreach (GameEntity timer in _timers)
                 {
                     timer.ReplaceSpawnTimer(timer.SpawnTimer - _timeService.DeltaTime);
+
                     if (timer.SpawnTimer <= 0)
                     {
-                        timer.ReplaceSpawnTimer(SPAWN_DISTANCE_GAP);
-                        _enemyFactory.CreateEnemy(EnemyTypeId.Goblin, RandomSpawnPosition(hero.WorldPosition));
+                        SpawnEnemyGroup(_waveCounter.PickUpRandomEnemy(), hero.WorldPosition);
+                        timer.ReplaceSpawnTimer(_waveCounter.EnemySpawnInterval);
                     }
                 }
             }
+        }
+
+        private void SpawnEnemyGroup(EnemyTypeId enemyTypeId, Vector2 aroundPosition)
+        {
+            _enemyFactory.CreateEnemy(enemyTypeId, RandomSpawnPosition(aroundPosition));
         }
 
         private Vector2 RandomSpawnPosition(Vector2 aroundPosition)

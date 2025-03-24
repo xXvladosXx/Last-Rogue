@@ -26,7 +26,7 @@ MonoBehaviour:
       ProjectileCount: 1
       ProjectileAmountPerShoot: 11
       Speed: 7
-      Pierce: 2
+      Pierce: 3
       ContactRadius: 1
       Lifetime: 15
       OrbitRadius: 0

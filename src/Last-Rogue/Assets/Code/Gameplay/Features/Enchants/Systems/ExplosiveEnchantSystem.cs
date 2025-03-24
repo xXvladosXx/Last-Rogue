@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Code.Common.Extensions;
 using Code.Gameplay.Features.Armaments.Factory;
 using Entitas;
 
@@ -34,7 +35,7 @@ namespace Code.Gameplay.Features.Enchants.Systems
             {
                 foreach (var armament in armamants)
                 {
-                    _armamentFactory.CreateExplosion(enchant.ProducerId, armament.WorldPosition);
+                    _armamentFactory.CreateExplosion(enchant.ProducerId, armament.WorldPosition, CollisionLayer.Enemy);
                 }
             }
         }

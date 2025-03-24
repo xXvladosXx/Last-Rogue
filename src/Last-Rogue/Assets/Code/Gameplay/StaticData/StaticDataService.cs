@@ -4,6 +4,9 @@ using System.Linq;
 using Code.Gameplay.Features.Abilities;
 using Code.Gameplay.Features.Abilities.Configs;
 using Code.Gameplay.Features.Enchants;
+using Code.Gameplay.Features.Enemies;
+using Code.Gameplay.Features.Enemies.Configs;
+using Code.Gameplay.Features.Enemies.Services.Wave.Configs;
 using Code.Gameplay.Features.LevelUp;
 using Code.Gameplay.Features.LevelUp.Configs;
 using Code.Gameplay.Features.Loot;
@@ -22,11 +25,13 @@ namespace Code.Gameplay.StaticData
         private Dictionary<EnchantTypeId, EnchantConfig> _enchantById;
         private Dictionary<LootTypeId, LootConfig> _lootById;
         private Dictionary<WindowId, GameObject> _windowPrefabsById;
+        private Dictionary<EnemyTypeId, EnemyConfig> _enemyById;
         
         private List<ShopItemConfig> _shopItemConfigs;
         
         private LevelUpConfig _levelUpConfig;
         private AfkGainConfig _afkGainConfig;
+        private WaveConfig _waveConfig;
 
         public const float ENEMY_SPAWN_TIMER = 1;
 
@@ -39,6 +44,17 @@ namespace Code.Gameplay.StaticData
             LoadLevelUpConfig();
             LoadAfkGainConfig();
             LoadShopItems();
+            LoadEnemies();
+            LoadWaveConfig();
+        }
+
+        public EnemyConfig GetEnemyConfig(EnemyTypeId enemyTypeId)
+        {
+            if (_enemyById.TryGetValue(enemyTypeId, out var config))
+                return config;
+            
+            Debug.LogError($"Enemy with id {enemyTypeId} not found");
+            return null;
         }
 
         public AbilityConfig GetAbilityConfig(AbilityId abilityId)
@@ -102,8 +118,9 @@ namespace Code.Gameplay.StaticData
 
             return config;
         }
-        
+
         public List<ShopItemConfig> GetShopItemConfigs => _shopItemConfigs;
+        public WaveConfig WaveConfig => _waveConfig;
 
         private void LoadEnchants()
         {
@@ -144,5 +161,15 @@ namespace Code.Gameplay.StaticData
             _shopItemConfigs = Resources
                 .LoadAll<ShopItemConfig>("Configs/ShopItems")
                 .ToList();
+
+        private void LoadEnemies()
+        {
+            _enemyById = Resources
+                .LoadAll<EnemyConfig>("Configs/Enemies")
+                .ToDictionary(x => x.EnemyTypeId, x => x);
+        }
+
+        private void LoadWaveConfig() => 
+            _waveConfig = Resources.Load<WaveConfig>("Configs/Wave Config");
     }
 }

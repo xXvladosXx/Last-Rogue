@@ -11,6 +11,8 @@ using Code.Gameplay.Features.Armaments.Factory;
 using Code.Gameplay.Features.Effects.Factory;
 using Code.Gameplay.Features.Enchants.UIFactories;
 using Code.Gameplay.Features.Enemies.Factory;
+using Code.Gameplay.Features.Enemies.Services;
+using Code.Gameplay.Features.Enemies.Services.Wave;
 using Code.Gameplay.Features.Hero.Factory;
 using Code.Gameplay.Features.Hero.Registrars;
 using Code.Gameplay.Features.LevelUp.Factory;
@@ -122,6 +124,7 @@ namespace Code.Infrastructure.Installers
             Container.Bind<ILevelUpService>().To<LevelUpService>().AsSingle();
             Container.Bind<IAbilityUpgradeService>().To<AbilityUpgradeService>().AsSingle();
             Container.Bind<IGeometryService>().To<GeometryService>().AsSingle();
+            Container.Bind<IWaveCounter>().To<WaveCounter>().AsSingle();
         }
 
         private void BindInfrastructureServices()

@@ -10,6 +10,7 @@ namespace Code.Gameplay.Features.Enemies
         {
             Add(systemFactory.Create<InitializeSpawnTimerSystem>());
             Add(systemFactory.Create<EnemySpawnSystem>());
+            Add(systemFactory.Create<EnemySelfExplosionSystem>());
             Add(systemFactory.Create<ChaseHeroSystem>());
             Add(systemFactory.Create<EnemyDeathSystem>());
             Add(systemFactory.Create<EnemyDropLootSystem>());

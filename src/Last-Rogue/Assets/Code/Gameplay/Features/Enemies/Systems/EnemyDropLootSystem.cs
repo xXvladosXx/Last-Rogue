@@ -24,19 +24,7 @@ namespace Code.Gameplay.Features.Enemies.Systems
         {
             foreach (GameEntity enemy in _enemies)
             {
-                if (Random.Range(0, 1f) <= .15f)
-                {
-                    _lootFactory.CreateLoot(LootTypeId.HealthPotion, enemy.WorldPosition);
-                }
-                else if (Random.Range(0, 1f) <= .15f)
-                {
-                    _lootFactory.CreateLoot(LootTypeId.PoisonEnchantItem, enemy.WorldPosition);
-                }
-                else if (Random.Range(0, 1f) <= .15f)
-                {
-                    _lootFactory.CreateLoot(LootTypeId.ExplosionEnchantItem, enemy.WorldPosition);
-                }
-                else
+               
                 {
                     _lootFactory.CreateLoot(LootTypeId.Experience, enemy.WorldPosition);
                 }
