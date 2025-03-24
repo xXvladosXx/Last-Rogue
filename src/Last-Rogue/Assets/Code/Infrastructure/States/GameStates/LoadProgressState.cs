@@ -48,6 +48,11 @@ namespace Code.Infrastructure.States.GameStates
         private void CreateNewProgress()
         {
             _saveLoadService.CreateProgress();
+            
+            CreateMetaEntity.Empty()
+                .With(x => x.isStorage = true)
+                .AddGold(0)
+                .AddGoldPerSecond(_staticDataService.AfkGainConfig.GainGoldPerSecond);
         }
 
         public void Exit()

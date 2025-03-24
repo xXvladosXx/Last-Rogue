@@ -6,9 +6,6 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-using Code.Gameplay.Meta.Features.Simulation;
-
 public sealed partial class MetaMatcher {
 
     static Entitas.IMatcher<MetaEntity> _matcherGoldGainBoost;
@@ -36,13 +33,13 @@ public sealed partial class MetaMatcher {
 //------------------------------------------------------------------------------
 public partial class MetaEntity {
 
-    public GoldGainBoost goldGainBoost { get { return (GoldGainBoost)GetComponent(MetaComponentsLookup.GoldGainBoost); } }
+    public Code.Meta.Features.Simulation.GoldGainBoost goldGainBoost { get { return (Code.Meta.Features.Simulation.GoldGainBoost)GetComponent(MetaComponentsLookup.GoldGainBoost); } }
     public float GoldGainBoost { get { return goldGainBoost.Value; } }
     public bool hasGoldGainBoost { get { return HasComponent(MetaComponentsLookup.GoldGainBoost); } }
 
     public MetaEntity AddGoldGainBoost(float newValue) {
         var index = MetaComponentsLookup.GoldGainBoost;
-        var component = (GoldGainBoost)CreateComponent(index, typeof(GoldGainBoost));
+        var component = (Code.Meta.Features.Simulation.GoldGainBoost)CreateComponent(index, typeof(Code.Meta.Features.Simulation.GoldGainBoost));
         component.Value = newValue;
         AddComponent(index, component);
         return this;
@@ -50,7 +47,7 @@ public partial class MetaEntity {
 
     public MetaEntity ReplaceGoldGainBoost(float newValue) {
         var index = MetaComponentsLookup.GoldGainBoost;
-        var component = (GoldGainBoost)CreateComponent(index, typeof(GoldGainBoost));
+        var component = (Code.Meta.Features.Simulation.GoldGainBoost)CreateComponent(index, typeof(Code.Meta.Features.Simulation.GoldGainBoost));
         component.Value = newValue;
         ReplaceComponent(index, component);
         return this;

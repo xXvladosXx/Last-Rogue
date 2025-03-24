@@ -9,6 +9,7 @@ namespace Code.Gameplay.Features.Hero
         public HeroFeature(ISystemFactory systemFactory)
         {
             Add(systemFactory.Create<InitializeHeroSystem>());
+            Add(systemFactory.Create<UpdateHealthBarSystem>());
             Add(systemFactory.Create<SetHeroDirectionByInputSystem>());
             Add(systemFactory.Create<AnimateHeroMovementSystem>());
             Add(systemFactory.Create<CameraFollowHeroSystem>());

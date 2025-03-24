@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Code.Gameplay.Common.Time;
 using Code.Infrastructure.Progress.Data;
 using Code.Infrastructure.Progress.Provider;
@@ -34,14 +35,22 @@ namespace Code.Infrastructure.Progress.SaveLoad
         public void LoadProgress()
         {
             var serializedProgress = PlayerPrefs.GetString(PLAYER_PROGRESS);
-            _progressProvider.SetProgressData(serializedProgress.FromJson<ProgressData>());
             
-            var snapshots = _progressProvider.ProgressData.EntityData.MetaEntitySnapshots;
-            foreach (var snapshot in snapshots)
+            try
             {
-                _metaContext
-                    .CreateEntity()
-                    .HydrateWith(snapshot);
+                _progressProvider.SetProgressData(serializedProgress.FromJson<ProgressData>());
+                var snapshots = _progressProvider.ProgressData.EntityData.MetaEntitySnapshots;
+                foreach (var snapshot in snapshots)
+                {
+                    _metaContext
+                        .CreateEntity()
+                        .HydrateWith(snapshot);
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"Failed to load progress: {e.Message}");
+                CreateProgress();
             }
         }
 

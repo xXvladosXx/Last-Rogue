@@ -8,9 +8,10 @@ using Code.Gameplay.Features.LevelUp;
 using Code.Gameplay.Features.LevelUp.Configs;
 using Code.Gameplay.Features.Loot;
 using Code.Gameplay.Features.Loot.Configs;
-using Code.Gameplay.Meta.Features.AfkGain.Configs;
 using Code.Gameplay.Windows;
 using Code.Gameplay.Windows.Configs;
+using Code.Meta.Features.AfkGain.Configs;
+using Code.Meta.UI.Shop.Items;
 using UnityEngine;
 
 namespace Code.Gameplay.StaticData
@@ -21,6 +22,8 @@ namespace Code.Gameplay.StaticData
         private Dictionary<EnchantTypeId, EnchantConfig> _enchantById;
         private Dictionary<LootTypeId, LootConfig> _lootById;
         private Dictionary<WindowId, GameObject> _windowPrefabsById;
+        
+        private List<ShopItemConfig> _shopItemConfigs;
         
         private LevelUpConfig _levelUpConfig;
         private AfkGainConfig _afkGainConfig;
@@ -35,6 +38,7 @@ namespace Code.Gameplay.StaticData
             LoadWindows();
             LoadLevelUpConfig();
             LoadAfkGainConfig();
+            LoadShopItems();
         }
 
         public AbilityConfig GetAbilityConfig(AbilityId abilityId)
@@ -87,7 +91,20 @@ namespace Code.Gameplay.StaticData
             _levelUpConfig.ExperienceForLevel[level];
 
         public AfkGainConfig AfkGainConfig => _afkGainConfig;
+
+        public ShopItemConfig GetShopItemConfig(ShopItemId shopItemId)
+        {
+            var config = _shopItemConfigs.FirstOrDefault(x => x.ShopItemId == shopItemId);
+            if (config == null)
+            {
+                Debug.LogError($"Shop item with id {shopItemId} not found");
+            }
+
+            return config;
+        }
         
+        public List<ShopItemConfig> GetShopItemConfigs => _shopItemConfigs;
+
         private void LoadEnchants()
         {
             _enchantById = Resources
@@ -122,5 +139,10 @@ namespace Code.Gameplay.StaticData
 
         private void LoadAfkGainConfig() => 
             _afkGainConfig = Resources.Load<AfkGainConfig>("Configs/Afk Gain Config");
+
+        private void LoadShopItems() =>
+            _shopItemConfigs = Resources
+                .LoadAll<ShopItemConfig>("Configs/ShopItems")
+                .ToList();
     }
 }

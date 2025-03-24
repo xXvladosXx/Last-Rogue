@@ -33,7 +33,7 @@ public sealed partial class MetaMatcher {
 //------------------------------------------------------------------------------
 public partial class MetaEntity {
 
-    static readonly Code.Gameplay.Meta.Features.Storage.Storage storageComponent = new Code.Gameplay.Meta.Features.Storage.Storage();
+    static readonly Code.Meta.Features.Storage.Storage storageComponent = new Code.Meta.Features.Storage.Storage();
 
     public bool isStorage {
         get { return HasComponent(MetaComponentsLookup.Storage); }

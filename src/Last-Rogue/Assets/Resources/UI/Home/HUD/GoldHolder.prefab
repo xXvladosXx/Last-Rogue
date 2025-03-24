@@ -258,11 +258,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3959384826562930946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72a15085a42f483183edd1559d70beb8, type: 3}
+  m_Script: {fileID: 11500000, guid: 943b50c9e0ac45a7a529585c84ad61cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Amount: {fileID: 7766834687579841390}
-  Boost: {fileID: 4610203699562106762}
+  _goldText: {fileID: 7766834687579841390}
+  _boost: {fileID: 4610203699562106762}
 --- !u!1 &7063784731447339564
 GameObject:
   m_ObjectHideFlags: 0

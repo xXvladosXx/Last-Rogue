@@ -2,7 +2,7 @@
 using Code.Infrastructure.Progress.SaveLoad;
 using Code.Infrastructure.Systems;
 
-namespace Code.Infrastructure.Progress
+namespace Code.Infrastructure.Progress.Systems
 {
     public class PeriodicallySaveProgressSystem : TimerExecuteSystem
     {

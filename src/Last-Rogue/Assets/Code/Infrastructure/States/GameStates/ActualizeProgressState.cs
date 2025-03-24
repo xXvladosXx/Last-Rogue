@@ -1,14 +1,14 @@
 ﻿using System;
 using Code.Common.Entity;
 using Code.Gameplay.Common.Time;
-using Code.Gameplay.Meta.Features.AfkGain.Configs;
-using Code.Gameplay.Meta.Features.Simulation;
 using Code.Infrastructure.Progress.Data;
 using Code.Infrastructure.Progress.Provider;
 using Code.Infrastructure.Progress.SaveLoad;
 using Code.Infrastructure.States.StateInfrastructure;
 using Code.Infrastructure.States.StateMachine;
 using Code.Infrastructure.Systems;
+using Code.Meta.Features.AfkGain.Configs;
+using Code.Meta.Features.Simulation;
 
 namespace Code.Infrastructure.States.GameStates
 {
@@ -52,11 +52,13 @@ namespace Code.Infrastructure.States.GameStates
 
             while (progressData.LastSimulationTickTime < until)
             {
-                CreateMetaEntity.Empty()
+                var tick = CreateMetaEntity.Empty()
                     .AddTick(AfkGainConfig.SIMULATION_TICK);
                 
                 _actualizationFeature.Execute();
                 _actualizationFeature.Cleanup();
+                
+                tick.Destroy();
             }
             
             progressData.LastSimulationTickTime = _timeService.UtcNow;

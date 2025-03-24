@@ -33,13 +33,13 @@ public sealed partial class MetaMatcher {
 //------------------------------------------------------------------------------
 public partial class MetaEntity {
 
-    public Code.Gameplay.Meta.Features.Storage.GoldPerSecond goldPerSecond { get { return (Code.Gameplay.Meta.Features.Storage.GoldPerSecond)GetComponent(MetaComponentsLookup.GoldPerSecond); } }
+    public Code.Meta.Features.Storage.GoldPerSecond goldPerSecond { get { return (Code.Meta.Features.Storage.GoldPerSecond)GetComponent(MetaComponentsLookup.GoldPerSecond); } }
     public float GoldPerSecond { get { return goldPerSecond.Value; } }
     public bool hasGoldPerSecond { get { return HasComponent(MetaComponentsLookup.GoldPerSecond); } }
 
     public MetaEntity AddGoldPerSecond(float newValue) {
         var index = MetaComponentsLookup.GoldPerSecond;
-        var component = (Code.Gameplay.Meta.Features.Storage.GoldPerSecond)CreateComponent(index, typeof(Code.Gameplay.Meta.Features.Storage.GoldPerSecond));
+        var component = (Code.Meta.Features.Storage.GoldPerSecond)CreateComponent(index, typeof(Code.Meta.Features.Storage.GoldPerSecond));
         component.Value = newValue;
         AddComponent(index, component);
         return this;
@@ -47,7 +47,7 @@ public partial class MetaEntity {
 
     public MetaEntity ReplaceGoldPerSecond(float newValue) {
         var index = MetaComponentsLookup.GoldPerSecond;
-        var component = (Code.Gameplay.Meta.Features.Storage.GoldPerSecond)CreateComponent(index, typeof(Code.Gameplay.Meta.Features.Storage.GoldPerSecond));
+        var component = (Code.Meta.Features.Storage.GoldPerSecond)CreateComponent(index, typeof(Code.Meta.Features.Storage.GoldPerSecond));
         component.Value = newValue;
         ReplaceComponent(index, component);
         return this;

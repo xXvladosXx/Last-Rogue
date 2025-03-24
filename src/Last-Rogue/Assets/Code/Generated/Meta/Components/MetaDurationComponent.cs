@@ -6,9 +6,6 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-using Code.Gameplay.Meta.Features.Simulation;
-
 public sealed partial class MetaMatcher {
 
     static Entitas.IMatcher<MetaEntity> _matcherDuration;
@@ -36,13 +33,13 @@ public sealed partial class MetaMatcher {
 //------------------------------------------------------------------------------
 public partial class MetaEntity {
 
-    public Duration duration { get { return (Duration)GetComponent(MetaComponentsLookup.Duration); } }
+    public Code.Meta.Features.Simulation.Duration duration { get { return (Code.Meta.Features.Simulation.Duration)GetComponent(MetaComponentsLookup.Duration); } }
     public float Duration { get { return duration.Value; } }
     public bool hasDuration { get { return HasComponent(MetaComponentsLookup.Duration); } }
 
     public MetaEntity AddDuration(float newValue) {
         var index = MetaComponentsLookup.Duration;
-        var component = (Duration)CreateComponent(index, typeof(Duration));
+        var component = (Code.Meta.Features.Simulation.Duration)CreateComponent(index, typeof(Code.Meta.Features.Simulation.Duration));
         component.Value = newValue;
         AddComponent(index, component);
         return this;
@@ -50,7 +47,7 @@ public partial class MetaEntity {
 
     public MetaEntity ReplaceDuration(float newValue) {
         var index = MetaComponentsLookup.Duration;
-        var component = (Duration)CreateComponent(index, typeof(Duration));
+        var component = (Code.Meta.Features.Simulation.Duration)CreateComponent(index, typeof(Code.Meta.Features.Simulation.Duration));
         component.Value = newValue;
         ReplaceComponent(index, component);
         return this;

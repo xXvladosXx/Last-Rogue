@@ -34,6 +34,11 @@ using Code.Infrastructure.States.StateMachine;
 using Code.Infrastructure.Systems;
 using Code.Infrastructure.View;
 using Code.Infrastructure.View.Factory;
+using Code.Meta.UI.GoldHolder.Service;
+using Code.Meta.UI.Shop.Factory;
+using Code.Meta.UI.Shop.Service;
+using Code.Meta.UI.Shop.Systems;
+using Code.Meta.UI.Shop.UIFactory;
 using Unity.VisualScripting;
 using Zenject;
 using IInitializable = Zenject.IInitializable;
@@ -133,6 +138,7 @@ namespace Code.Infrastructure.Installers
             Container.Bind<IEffectFactory>().To<EffectFactory>().AsSingle();
             Container.Bind<IStatusFactory>().To<StatusFactory>().AsSingle();
             Container.Bind<ILootFactory>().To<LootFactory>().AsSingle();
+            Container.Bind<IShopItemFactory>().To<ShopItemFactory>().AsSingle();
         }
 
         private void BindUIFactories()
@@ -140,6 +146,7 @@ namespace Code.Infrastructure.Installers
             Container.Bind<IEnchantUIFactory>().To<EnchantUIFactory>().AsSingle();
             Container.Bind<IWindowFactory>().To<WindowFactory>().AsSingle();
             Container.Bind<IAbilityUIFactory>().To<AbilityUIFactory>().AsSingle();
+            Container.Bind<IShopUIFactory>().To<ShopUIFactory>().AsSingle();
         }
 
         private void BindAssetManagementServices()
@@ -167,6 +174,8 @@ namespace Code.Infrastructure.Installers
         private void BindUIServices()
         {
             Container.Bind<IWindowService>().To<WindowService>().AsSingle();
+            Container.Bind<IStorageUIService>().To<StorageUIService>().AsSingle();
+            Container.Bind<IShopUIService>().To<ShopUIService>().AsSingle();
         }
 
         private void BindProgressServices()

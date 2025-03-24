@@ -26,7 +26,6 @@ namespace Code.Gameplay.Features.Hero.Systems
         
         public void Initialize()
         {
-            _heroFactory.CreateHero(_levelDataProvider.StartPoint);
             _abilityUpgradeService.InitializeAbility(AbilityId.VegetableBolt);
         }
     }

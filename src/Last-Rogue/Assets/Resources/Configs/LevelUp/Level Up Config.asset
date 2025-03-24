@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxLevel: 7
   ExperienceForLevel:
-  - 0
-  - 5
-  - 7
+  - 1111
+  - 1111
+  - 1111
   - 12
   - 18
   - 36
