@@ -1,6 +1,7 @@
 using Code.Common.EntityIndices;
 using Code.Gameplay.Cameras.Provider;
 using Code.Gameplay.Common.Collisions;
+using Code.Gameplay.Common.Geometry;
 using Code.Gameplay.Common.Physics;
 using Code.Gameplay.Common.Random;
 using Code.Gameplay.Common.Time;
@@ -120,6 +121,7 @@ namespace Code.Infrastructure.Installers
             Container.Bind<IStatusApplier>().To<StatusApplier>().AsSingle();
             Container.Bind<ILevelUpService>().To<LevelUpService>().AsSingle();
             Container.Bind<IAbilityUpgradeService>().To<AbilityUpgradeService>().AsSingle();
+            Container.Bind<IGeometryService>().To<GeometryService>().AsSingle();
         }
 
         private void BindInfrastructureServices()

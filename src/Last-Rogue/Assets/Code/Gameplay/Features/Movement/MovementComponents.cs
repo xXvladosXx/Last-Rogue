@@ -13,4 +13,6 @@ namespace Code.Gameplay.Features.Movement
     [Game] public class OrbitPhase : IComponent { public float Value; }
     [Game] public class OrbitCenterPosition : IComponent { public Vector3 Value; }
     [Game] public class OrbitCenterFollowTarget : IComponent { public int Value; }
+    [Game] public class AngleSpeed : IComponent { public float Value; }
+    [Game] public class RotatesAroundCenter : IComponent { }
 }

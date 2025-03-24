@@ -43,6 +43,9 @@ namespace Code.Gameplay.Features.Abilities.Upgrade
                 case AbilityId.OrbitingMushroom:
                     _abilityFactory.CreateOrbitalMushroomAbility(1);
                     break;
+                case AbilityId.ShovelRadialStrike:
+                    _abilityFactory.CreateShovelRadialStrikeAbility(1);
+                    break;
                 default:
                     throw new Exception($"Ability {ability} is not defined");
             }

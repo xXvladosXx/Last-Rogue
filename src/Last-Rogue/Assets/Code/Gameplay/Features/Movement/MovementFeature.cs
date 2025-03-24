@@ -13,6 +13,7 @@ namespace Code.Gameplay.Features.Movement
             Add(systemFactory.Create<OrbitCenterFollowSystem>());
             
             Add(systemFactory.Create<UpdateTransformPositionSystem>());
+            Add(systemFactory.Create<RotateAroundCenterSystem>());
             Add(systemFactory.Create<TurnAlongDirectionSystem>());
             Add(systemFactory.Create<RotateAlongDirectionSystem>());
         }

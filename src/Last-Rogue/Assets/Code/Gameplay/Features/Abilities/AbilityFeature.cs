@@ -13,6 +13,7 @@ namespace Code.Gameplay.Features.Abilities
             Add(systemFactory.Create<VegetableBoltAbilitySystem>());
             Add(systemFactory.Create<OrbitingMushroomAbilitySystem>());
             Add(systemFactory.Create<GarlicAuraAbilitySystem>());
+            Add(systemFactory.Create<ShovelRadialStrikeAbilitySystem>());
         }
     }
 }

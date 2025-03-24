@@ -50,5 +50,17 @@ namespace Code.Gameplay.Features.Abilities.Factory
                 .With(x => x.isGarlicAuraAbility = true)
                 .With(x => x.isRecreatedOnUpgrade = true);
         }
+        
+        public GameEntity CreateShovelRadialStrikeAbility(int level)
+        {
+            var abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.ShovelRadialStrike, level);
+      
+            return CreateEntity.Empty()
+                .AddId(_identifierService.Next())
+                .AddAbilityId(AbilityId.ShovelRadialStrike)
+                .AddCooldown(abilityLevel.Cooldown)
+                .With(x => x.isShovelRadialStrikeAbility = true)
+                .PutOnCooldown();
+        }    
     }
 }

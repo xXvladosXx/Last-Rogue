@@ -27,6 +27,7 @@ namespace Code.Gameplay.Features.Hero.Systems
         public void Initialize()
         {
             _abilityUpgradeService.InitializeAbility(AbilityId.VegetableBolt);
+            _abilityUpgradeService.InitializeAbility(AbilityId.ShovelRadialStrike);
         }
     }
 }

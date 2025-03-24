@@ -3,6 +3,7 @@ using Code.Common.Entity;
 using Code.Common.Extensions;
 using Code.Gameplay.Features.Abilities;
 using Code.Gameplay.Features.Abilities.Configs;
+using Code.Gameplay.Features.Armaments.Extensions;
 using Code.Gameplay.Features.Enchants;
 using Code.Gameplay.StaticData;
 using Code.Infrastructure.Identifiers;
@@ -65,6 +66,18 @@ namespace Code.Gameplay.Features.Armaments.Factory
                 .With(x => x.isFollowingProducer = true)
                 .AddWorldPosition(Vector3.zero)
                 .AddName("Aura");
+        }
+        
+        public GameEntity CreateShovelBolt(int level, Vector3 at)
+        {
+            AbilityLevel abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.ShovelRadialStrike, level);
+            ProjectileSetup setup = abilityLevel.ProjectileSetup;
+
+            return CreateProjectileEntity(at, abilityLevel, setup)
+                .AddParentAbility(AbilityId.ShovelRadialStrike)
+                .AddAngleSpeed(setup.AngleSpeed)
+                .With(x => x.isRotatesAroundCenter = true)
+                .With(x => x.isShovelRadialStrikeAbility = true);
         }
         
         private GameEntity CreateProjectileEntity(Vector3 at, AbilityLevel abilityLevel, ProjectileSetup setup)

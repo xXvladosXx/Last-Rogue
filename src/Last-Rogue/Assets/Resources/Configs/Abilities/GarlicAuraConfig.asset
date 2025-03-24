@@ -26,11 +26,14 @@ MonoBehaviour:
       Period: 0
     ProjectileSetup:
       ProjectileCount: 0
+      ProjectileAmountPerShoot: 1
       Speed: 0
       Pierce: 0
+      MaxTargetsAmount: 111
       ContactRadius: 0
       Lifetime: 0
       OrbitRadius: 0
+      AngleSpeed: 0
     AuraSetup:
       Radius: 2
       Interaval: 1
@@ -46,11 +49,14 @@ MonoBehaviour:
       Period: 0
     ProjectileSetup:
       ProjectileCount: 0
+      ProjectileAmountPerShoot: 1
       Speed: 0
       Pierce: 0
+      MaxTargetsAmount: 1
       ContactRadius: 0
       Lifetime: 0
       OrbitRadius: 0
+      AngleSpeed: 0
     AuraSetup:
       Radius: 2
       Interaval: 1

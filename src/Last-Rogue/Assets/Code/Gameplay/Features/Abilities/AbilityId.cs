@@ -6,5 +6,6 @@
         VegetableBolt = 1,
         OrbitingMushroom = 2,
         GarlicAura = 3,
+        ShovelRadialStrike = 4,
     }
 }
