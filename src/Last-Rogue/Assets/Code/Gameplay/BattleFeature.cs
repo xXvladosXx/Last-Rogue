@@ -11,6 +11,7 @@ using Code.Gameplay.Features.Effects.Systems;
 using Code.Gameplay.Features.Enchants;
 using Code.Gameplay.Features.Enchants.Systems;
 using Code.Gameplay.Features.Enemies;
+using Code.Gameplay.Features.GameOver;
 using Code.Gameplay.Features.Hero;
 using Code.Gameplay.Features.Hero.Systems;
 using Code.Gameplay.Features.LevelUp;
@@ -22,6 +23,7 @@ using Code.Gameplay.Features.TargetCollection;
 using Code.Gameplay.Input;
 using Code.Gameplay.Input.Service;
 using Code.Gameplay.Input.Systems;
+using Code.Infrastructure.States.GameStates;
 using Code.Infrastructure.Systems;
 using Code.Infrastructure.View;
 
@@ -53,6 +55,9 @@ namespace Code.Gameplay
             
             Add(systemFactory.Create<CollectTargetsFeature>());
             Add(systemFactory.Create<EffectApplicationFeature>());
+            
+            Add(systemFactory.Create<GameOverOnHeroDeathSystem>());
+            
             Add(systemFactory.Create<ProcessDestructedFeature>());
         }
     }

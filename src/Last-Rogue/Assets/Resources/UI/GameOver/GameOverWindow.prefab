@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5531409480af4bed8993309fa4f441f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReturnHomeButton: {fileID: 4779439313395022901}
+  _returnHomeButton: {fileID: 4779439313395022901}
 --- !u!1 &6347036738915082666
 GameObject:
   m_ObjectHideFlags: 0

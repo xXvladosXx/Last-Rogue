@@ -20,7 +20,7 @@ MonoBehaviour:
     ViewPrefab: {fileID: 3921235629184578821, guid: 2349d0850d5c15c48aa1dfa7e580a039, type: 3}
     EffectSetups:
     - EffectTypeId: 1
-      Value: 3
+      Value: 0
     StatusSetups: []
     ProjectileSetup:
       ProjectileCount: 1
