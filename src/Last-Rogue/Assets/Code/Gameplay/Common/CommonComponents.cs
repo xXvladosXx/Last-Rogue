@@ -16,5 +16,6 @@ namespace Code.Gameplay.Common
     [Game] public class StatusVisualsComponent : IComponent { public IStatusVisuals Value; }
     [Game] public class Active : IComponent { }
     [Game] public class Name : IComponent { public string Value; }
+    [Game] public class ColliderComponent : IComponent { public Collider2D Value; }
 
 }

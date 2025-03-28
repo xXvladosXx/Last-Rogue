@@ -27,7 +27,7 @@ namespace Code.Gameplay.Features.Abilities.Factory
                 .AddCooldown(abilityLevel.Cooldown)
                 .With(x => x.isVegetableBoltAbility = true)
                 .With(x => x.isRecreatedOnUpgrade = true)
-                .PutOnCooldown();
+                .PutOnCooldown(abilityLevel.Cooldown);
         }
         
         public GameEntity CreateOrbitalMushroomAbility(int level)
@@ -39,7 +39,7 @@ namespace Code.Gameplay.Features.Abilities.Factory
                 .AddCooldown(abilityLevel.Cooldown)
                 .With(x => x.isOrbitingMushroomAbility = true)
                 .With(x => x.isRecreatedOnUpgrade = true)
-                .PutOnCooldown();
+                .PutOnCooldown(abilityLevel.Cooldown);
         }
         
         public GameEntity CreateGarlicAuraAbility()
@@ -60,7 +60,7 @@ namespace Code.Gameplay.Features.Abilities.Factory
                 .AddAbilityId(AbilityId.ShovelRadialStrike)
                 .AddCooldown(abilityLevel.Cooldown)
                 .With(x => x.isShovelRadialStrikeAbility = true)
-                .PutOnCooldown();
+                .PutOnCooldown(abilityLevel.Cooldown);
         }    
         
         public GameEntity CreateScatteringFireballAbility(int level)
@@ -72,7 +72,7 @@ namespace Code.Gameplay.Features.Abilities.Factory
                 .AddAbilityId(AbilityId.ScatteringFireball)
                 .AddCooldown(abilityLevel.Cooldown)
                 .With(x => x.isScatteringFireballAbility = true)
-                .PutOnCooldown();
+                .PutOnCooldown(abilityLevel.Cooldown);
         }
     }
 }

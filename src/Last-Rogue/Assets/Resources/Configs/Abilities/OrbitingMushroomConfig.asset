@@ -15,16 +15,16 @@ MonoBehaviour:
   AbilityId: 2
   Levels:
   - Icon: {fileID: 21300000, guid: 4d94380f2cdab534b96b00f84934873a, type: 3}
-    Description: Mushroom
+    Description: Adds Orbiting Mushroom
     Cooldown: 5
     ViewPrefab: {fileID: 4330708321576961924, guid: 92dc63e318e181a4a9587ecf7216ee46, type: 3}
     EffectSetups:
     - EffectTypeId: 1
-      Value: 1
+      Value: 10
     StatusSetups: []
     ProjectileSetup:
-      ProjectileCount: 3
-      ProjectileAmountPerShoot: 1
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 0
       Speed: 2
       Pierce: 0
       ContactRadius: 0.1
@@ -34,17 +34,27 @@ MonoBehaviour:
     AuraSetup:
       Radius: 0
       Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
   - Icon: {fileID: 21300000, guid: 4d94380f2cdab534b96b00f84934873a, type: 3}
-    Description: Mushroom
-    Cooldown: 5
+    Description: Increases amount & reduces cooldown
+    Cooldown: 3
     ViewPrefab: {fileID: 4330708321576961924, guid: 92dc63e318e181a4a9587ecf7216ee46, type: 3}
     EffectSetups:
     - EffectTypeId: 1
-      Value: 1
+      Value: 10
     StatusSetups: []
     ProjectileSetup:
-      ProjectileCount: 3
-      ProjectileAmountPerShoot: 1
+      ProjectileCount: 2
+      ProjectileAmountPerShoot: 0
       Speed: 2
       Pierce: 0
       ContactRadius: 0.1
@@ -54,3 +64,163 @@ MonoBehaviour:
     AuraSetup:
       Radius: 0
       Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 4d94380f2cdab534b96b00f84934873a, type: 3}
+    Description: Increases amount
+    Cooldown: 3
+    ViewPrefab: {fileID: 4330708321576961924, guid: 92dc63e318e181a4a9587ecf7216ee46, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 10
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 4
+      ProjectileAmountPerShoot: 0
+      Speed: 2
+      Pierce: 0
+      ContactRadius: 0.1
+      Lifetime: 3
+      OrbitRadius: 1
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 4d94380f2cdab534b96b00f84934873a, type: 3}
+    Description: 'Increases orbit & amount '
+    Cooldown: 3
+    ViewPrefab: {fileID: 4330708321576961924, guid: 92dc63e318e181a4a9587ecf7216ee46, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 10
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 6
+      ProjectileAmountPerShoot: 0
+      Speed: 2
+      Pierce: 0
+      ContactRadius: 0.1
+      Lifetime: 3
+      OrbitRadius: 3
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 4d94380f2cdab534b96b00f84934873a, type: 3}
+    Description: Increases orbit & amount & damage
+    Cooldown: 3
+    ViewPrefab: {fileID: 4330708321576961924, guid: 92dc63e318e181a4a9587ecf7216ee46, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 25
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 8
+      ProjectileAmountPerShoot: 0
+      Speed: 2
+      Pierce: 0
+      ContactRadius: 0.1
+      Lifetime: 3
+      OrbitRadius: 3
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 4d94380f2cdab534b96b00f84934873a, type: 3}
+    Description: Increases damage
+    Cooldown: 3
+    ViewPrefab: {fileID: 4330708321576961924, guid: 92dc63e318e181a4a9587ecf7216ee46, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 30
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 8
+      ProjectileAmountPerShoot: 0
+      Speed: 2
+      Pierce: 0
+      ContactRadius: 0.1
+      Lifetime: 3
+      OrbitRadius: 3
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 4d94380f2cdab534b96b00f84934873a, type: 3}
+    Description: Decreases cooldown
+    Cooldown: 1.5
+    ViewPrefab: {fileID: 4330708321576961924, guid: 92dc63e318e181a4a9587ecf7216ee46, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 30
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 8
+      ProjectileAmountPerShoot: 0
+      Speed: 2
+      Pierce: 0
+      ContactRadius: 0.1
+      Lifetime: 3
+      OrbitRadius: 3
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0

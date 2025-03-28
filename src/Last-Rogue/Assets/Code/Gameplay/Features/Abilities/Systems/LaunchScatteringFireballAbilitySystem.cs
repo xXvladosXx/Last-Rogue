@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Code.Common.Extensions;
+using Code.Gameplay.Features.Abilities.Upgrade;
 using Code.Gameplay.Features.Armaments.Factory;
 using Code.Gameplay.Features.Cooldowns;
 using Code.Gameplay.Features.Cooldowns.Systems;
@@ -13,14 +14,18 @@ namespace Code.Gameplay.Features.Abilities.Systems
     {
         private readonly IGroup<GameEntity> _abilities;
         private readonly IStaticDataService _staticDataService;
+        private readonly IAbilityUpgradeService _abilityUpgradeService;
         private readonly IArmamentFactory _armamentsFactory;
         private readonly List<GameEntity> _buffer = new(1);
         private readonly IGroup<GameEntity> _heroes;
         private readonly IGroup<GameEntity> _enemies;
 
-        public LaunchScatteringFireballAbilitySystem(GameContext game, IStaticDataService staticDataService,
+        public LaunchScatteringFireballAbilitySystem(GameContext game,
+            IAbilityUpgradeService abilityUpgradeService,
+            IStaticDataService staticDataService,
             IArmamentFactory armamentsFactory)
         {
+            _abilityUpgradeService = abilityUpgradeService;
             _armamentsFactory = armamentsFactory;
             _staticDataService = staticDataService;
 
@@ -46,12 +51,14 @@ namespace Code.Gameplay.Features.Abilities.Systems
                     if (_enemies.count <= 0)
                         continue;
 
-                    _armamentsFactory.CreateMainFireball(1, hero.WorldPosition)
+                    int level = _abilityUpgradeService.GetAbilityLevel(AbilityId.ScatteringFireball);
+
+                    _armamentsFactory.CreateMainFireball(level, hero.WorldPosition)
                         .ReplaceDirection((FirstAvailableTarget().WorldPosition - hero.WorldPosition).normalized)
                         .With(x => x.isMoving = true);
 
                     ability
-                        .PutOnCooldown(_staticDataService.GetAbilityLevel(AbilityId.ScatteringFireball, 1).Cooldown);
+                        .PutOnCooldown(_staticDataService.GetAbilityLevel(AbilityId.ScatteringFireball, level).Cooldown);
                 }
             }
         }

@@ -1,4 +1,5 @@
-﻿using Code.Common.Entity;
+﻿using System;
+using Code.Common.Entity;
 using Code.Gameplay.Features.Abilities;
 using Code.Gameplay.Features.Abilities.Upgrade;
 using Code.Gameplay.Features.LevelUp.Factory;
@@ -35,10 +36,17 @@ namespace Code.Gameplay.Features.LevelUp.Windows
         {
             foreach (var upgradeOption in _abilityUpgradeService.GetUpgradeOptions())
             {
-                var abilityLevel = _staticDataService.GetAbilityLevel(upgradeOption.Id, upgradeOption.Level);
-                
-                _abilityUIFactory.CreateAbilityCard(AbilityLayout)
-                    .Setup(upgradeOption.Id, abilityLevel, OnSelected);
+                try
+                {
+                    var abilityLevel = _staticDataService.GetAbilityLevel(upgradeOption.Id, upgradeOption.Level);
+                    _abilityUIFactory.CreateAbilityCard(AbilityLayout)
+                        .Setup(upgradeOption.Id, abilityLevel, OnSelected);
+                }
+                catch (Exception e)
+                {
+                    Initialize();
+                    break;
+                }
             }
         }
 

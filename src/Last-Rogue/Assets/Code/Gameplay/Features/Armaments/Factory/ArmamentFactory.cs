@@ -92,10 +92,17 @@ namespace Code.Gameplay.Features.Armaments.Factory
 
         public GameEntity CreateChildFireball(int level, Vector3 at)
         {
-            AbilityLevel abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.ScatteringFireballChild, level);
-            ProjectileSetup setup = abilityLevel.ProjectileSetup;
+            AbilityLevel abilityLevel = _staticDataService.GetAbilityLevel(AbilityId.ScatteringFireball, level);
+            ProjectileSetup setup = abilityLevel.ChildProjectileSetup;
+            var childAbilityLevel = new AbilityLevel
+            {
+                ViewPrefab = abilityLevel.ChildPrefab,
+                ProjectileSetup = abilityLevel.ChildProjectileSetup,
+                EffectSetups = abilityLevel.EffectSetups,
+                StatusSetups = abilityLevel.StatusSetups
+            };
 
-            return CreateProjectileEntity(at, abilityLevel, setup)
+            return CreateProjectileEntity(at, childAbilityLevel, setup)
                 .AddParentAbility(AbilityId.ScatteringFireball);
         }
 

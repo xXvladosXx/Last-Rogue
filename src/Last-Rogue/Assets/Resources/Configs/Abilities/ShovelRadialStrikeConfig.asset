@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AbilityId: 4
   Levels:
-  - Icon: {fileID: 0}
-    Description: 
+  - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
+    Description: Adds radial Shovel
     Cooldown: 3
     ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
     EffectSetups:
     - EffectTypeId: 1
-      Value: 1
+      Value: 5
     StatusSetups: []
     ProjectileSetup:
       ProjectileCount: 1
-      ProjectileAmountPerShoot: 8
+      ProjectileAmountPerShoot: 4
       Speed: 5
       Pierce: 1
       ContactRadius: 1
@@ -34,23 +34,197 @@ MonoBehaviour:
     AuraSetup:
       Radius: 0
       Interaval: 0
-  - Icon: {fileID: -7464922432792283369, guid: 4073259e244f2774aad3822d8c4c5042, type: 3}
-    Description: Bolt
-    Cooldown: 1
-    ViewPrefab: {fileID: 4045196373934776536, guid: 08ce9f5922001044d87f0b92a159a8c4, type: 3}
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
+    Description: Reduces cooldown & increases amount
+    Cooldown: 0.1
+    ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
     EffectSetups:
     - EffectTypeId: 1
-      Value: 2
+      Value: 5
     StatusSetups: []
     ProjectileSetup:
       ProjectileCount: 1
-      ProjectileAmountPerShoot: 1
-      Speed: 2
-      Pierce: 11
-      ContactRadius: 0.1
-      Lifetime: 3
+      ProjectileAmountPerShoot: 6
+      Speed: 5
+      Pierce: 1
+      ContactRadius: 1
+      Lifetime: 4
       OrbitRadius: 0
-      AngleSpeed: 0
+      AngleSpeed: 90
     AuraSetup:
       Radius: 0
       Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
+    Description: Increases amount & pierce
+    Cooldown: 3
+    ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 5
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 16
+      Speed: 5
+      Pierce: 4
+      ContactRadius: 1
+      Lifetime: 4
+      OrbitRadius: 0
+      AngleSpeed: 90
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
+    Description: Increases damage & speed
+    Cooldown: 1
+    ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 10
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 12
+      Speed: 5
+      Pierce: 4
+      ContactRadius: 1
+      Lifetime: 4
+      OrbitRadius: 0
+      AngleSpeed: 300
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
+    Description: Decreases cooldown & increases speed
+    Cooldown: 1
+    ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 10
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 16
+      Speed: 16
+      Pierce: 4
+      ContactRadius: 1
+      Lifetime: 4
+      OrbitRadius: 0
+      AngleSpeed: 90
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
+    Description: Increases amount & speed
+    Cooldown: 0.1
+    ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 10
+    StatusSetups: []
+    ProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 32
+      Speed: 16
+      Pierce: 4
+      ContactRadius: 1
+      Lifetime: 6
+      OrbitRadius: 0
+      AngleSpeed: 90
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+  - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
+    Description: Adds poison
+    Cooldown: 0.1
+    ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
+    EffectSetups:
+    - EffectTypeId: 1
+      Value: 10
+    StatusSetups:
+    - StatusTypeId: 1
+      Value: 5
+      Duration: 5
+      Period: 1
+    ProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 32
+      Speed: 16
+      Pierce: 4
+      ContactRadius: 1
+      Lifetime: 6
+      OrbitRadius: 0
+      AngleSpeed: 90
+    AuraSetup:
+      Radius: 0
+      Interaval: 0
+    ChildPrefab: {fileID: 0}
+    ChildProjectileSetup:
+      ProjectileCount: 1
+      ProjectileAmountPerShoot: 1
+      Speed: 0
+      Pierce: 1
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0

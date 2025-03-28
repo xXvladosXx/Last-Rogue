@@ -111,9 +111,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3360128356117953061, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7281776230739847487}
-    - targetCorrespondingSourceObject: {fileID: 792109486133688577, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 3360128356117953061, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5370217267568318698}
+      addedObject: {fileID: 6553012631614694342}
   m_SourcePrefab: {fileID: 100100000, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
 --- !u!1 &1186230661049640603 stripped
 GameObject:
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityView: {fileID: 123070209800205948}
-  EnchantVisuals: {fileID: 5370217267568318698}
+  EnchantVisuals: {fileID: 6553012631614694342}
 --- !u!114 &7281776230739847487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,23 +173,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityView: {fileID: 123070209800205948}
   SpriteRenderer: {fileID: 3119518841676073077}
---- !u!212 &3119518841676073077 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1557407318731609291, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
-  m_PrefabInstance: {fileID: 4528303934580382910}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3758789412400260543 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 792109486133688577, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
-  m_PrefabInstance: {fileID: 4528303934580382910}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5370217267568318698
+--- !u!114 &6553012631614694342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3758789412400260543}
+  m_GameObject: {fileID: 1186230661049640603}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fea46d9a21f47a1a494e6ddce632159, type: 3}
@@ -199,5 +189,10 @@ MonoBehaviour:
   FreezeColor: {r: 0.21960784, g: 0.6392157, b: 0.74509805, a: 1}
   FreezeOutlineSize: 3
   FreezeOutlineSmoothness: 8
-  PoisonColor: {r: 0.21960782, g: 0.74509805, b: 0.22185396, a: 1}
+  PoisonColor: {r: 0.34065714, g: 0.74509805, b: 0.21960782, a: 1}
   PoisonColorIntensity: 0.6
+--- !u!212 &3119518841676073077 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1557407318731609291, guid: 02c1c61dae6b7e34d976ffa02368e391, type: 3}
+  m_PrefabInstance: {fileID: 4528303934580382910}
+  m_PrefabAsset: {fileID: 0}

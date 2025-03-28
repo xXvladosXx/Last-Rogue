@@ -58,6 +58,17 @@ namespace Code.Gameplay.Features.Abilities.Systems
                         .AddProducerId(hero.Id)
                         .ReplaceDirection((GetNearestEnemy(hero.WorldPosition).WorldPosition - hero.WorldPosition).normalized)
                         .With(x => x.isMoving = true);
+
+                    if (_staticDataService.GetAbilityLevel(AbilityId.VegetableBolt, level).ProjectileSetup.ProjectileCount > 1)
+                    {
+                        for (int i = 1; i < _staticDataService.GetAbilityLevel(AbilityId.VegetableBolt, level).ProjectileSetup.ProjectileCount; i++)
+                        {
+                            _armamentFactory.CreateVegetableBolt(level, hero.WorldPosition)
+                                .AddProducerId(hero.Id)
+                                .ReplaceDirection((_enemies.GetEntities().FirstOrDefault()!.WorldPosition - hero.WorldPosition).normalized)
+                                .With(x => x.isMoving = true);
+                        }
+                    }
                     
                     ability.PutOnCooldown(_staticDataService.GetAbilityLevel(AbilityId.VegetableBolt, level).Cooldown);
                 }

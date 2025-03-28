@@ -26,7 +26,7 @@ namespace Code.Gameplay.Features.LevelUp.Services
         {
             while (true)
             {
-                if (CurrentLevel > _staticDataService.MaxLevel) 
+                if (CurrentLevel >= _staticDataService.MaxLevel) 
                     return;
 
                 var experienceForLevelUp = _staticDataService.ExperienceForLevel(CurrentLevel + 1);

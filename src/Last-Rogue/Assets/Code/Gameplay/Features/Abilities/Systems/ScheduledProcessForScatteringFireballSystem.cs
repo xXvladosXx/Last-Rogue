@@ -2,6 +2,7 @@
 using System.Linq;
 using Code.Common.Extensions;
 using Code.Gameplay.Common.Geometry;
+using Code.Gameplay.Features.Abilities.Upgrade;
 using Code.Gameplay.Features.Armaments.Factory;
 using Code.Gameplay.StaticData;
 using Entitas;
@@ -13,6 +14,7 @@ namespace Code.Gameplay.Features.Abilities.Systems
     {
         private readonly IArmamentFactory _armamentsFactory;
         private readonly IStaticDataService _staticDataService;
+        private readonly IAbilityUpgradeService _abilityUpgradeService;
         private readonly IGeometryService _geometryService;
 
         private readonly IGroup<GameEntity> _enemies;
@@ -23,10 +25,12 @@ namespace Code.Gameplay.Features.Abilities.Systems
             GameContext game,
             IArmamentFactory armamentsFactory,
             IStaticDataService staticDataService,
+            IAbilityUpgradeService abilityUpgradeService,
             IGeometryService geometryService)
         {
             _armamentsFactory = armamentsFactory;
             _staticDataService = staticDataService;
+            _abilityUpgradeService = abilityUpgradeService;
             _geometryService = geometryService;
 
             _enemies = game.GetGroup(GameMatcher
@@ -48,13 +52,15 @@ namespace Code.Gameplay.Features.Abilities.Systems
                 {
                     if (armament.TargetsBuffer.Contains(enemy.Id) || armament.ProcessedTargets.Contains(enemy.Id))
                     {
-                        int projectileAmount = _staticDataService.GetAbilityLevel(AbilityId.ScatteringFireballChild, 1)
-                            .ProjectileSetup.ProjectileAmountPerShoot;
+                        int level = _abilityUpgradeService.GetAbilityLevel(AbilityId.ScatteringFireball);
+                        int projectileAmount = _staticDataService.GetAbilityLevel(AbilityId.ScatteringFireball, level)
+                            .ChildProjectileSetup.ProjectileAmountPerShoot;
+                        
                         Vector2[] directions = _geometryService.GetRadialDirections(projectileAmount).ToArray();
 
                         for (int i = 0; i < projectileAmount; i++)
                         {
-                            var childFireball = _armamentsFactory.CreateChildFireball(1, enemy.WorldPosition)
+                            var childFireball = _armamentsFactory.CreateChildFireball(level, enemy.WorldPosition)
                                 .ReplaceDirection(directions[i])
                                 .With(x => x.isMoving = true);
                             

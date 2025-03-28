@@ -15,13 +15,13 @@ MonoBehaviour:
   AbilityId: 3
   Levels:
   - Icon: {fileID: 21300000, guid: 7c5b1d69d323a2c489af81f57a7a9602, type: 3}
-    Description: Garlik
+    Description: Adds Freezing Aura
     Cooldown: 0
     ViewPrefab: {fileID: 6796556165146829677, guid: c4c8cf39ebe3672468c50bd2fedcd936, type: 3}
     EffectSetups: []
     StatusSetups:
     - StatusTypeId: 2
-      Value: -5
+      Value: -2
       Duration: 0.2
       Period: 0
     ProjectileSetup:
@@ -29,7 +29,6 @@ MonoBehaviour:
       ProjectileAmountPerShoot: 1
       Speed: 0
       Pierce: 0
-      MaxTargetsAmount: 111
       ContactRadius: 0
       Lifetime: 0
       OrbitRadius: 0
@@ -38,25 +37,112 @@ MonoBehaviour:
       Radius: 2
       Interaval: 1
   - Icon: {fileID: 21300000, guid: 7c5b1d69d323a2c489af81f57a7a9602, type: 3}
-    Description: Garlik
+    Description: Increases aura radius
     Cooldown: 0
     ViewPrefab: {fileID: 6796556165146829677, guid: c4c8cf39ebe3672468c50bd2fedcd936, type: 3}
     EffectSetups: []
     StatusSetups:
     - StatusTypeId: 2
-      Value: -5
+      Value: -2
       Duration: 0.2
       Period: 0
     ProjectileSetup:
       ProjectileCount: 0
-      ProjectileAmountPerShoot: 1
+      ProjectileAmountPerShoot: 0
       Speed: 0
       Pierce: 0
-      MaxTargetsAmount: 1
       ContactRadius: 0
       Lifetime: 0
       OrbitRadius: 0
       AngleSpeed: 0
     AuraSetup:
-      Radius: 2
+      Radius: 4
       Interaval: 1
+  - Icon: {fileID: 21300000, guid: 7c5b1d69d323a2c489af81f57a7a9602, type: 3}
+    Description: More increase to aura radius
+    Cooldown: 0
+    ViewPrefab: {fileID: 6796556165146829677, guid: c4c8cf39ebe3672468c50bd2fedcd936, type: 3}
+    EffectSetups: []
+    StatusSetups:
+    - StatusTypeId: 2
+      Value: -2
+      Duration: 0.2
+      Period: 0
+    ProjectileSetup:
+      ProjectileCount: 0
+      ProjectileAmountPerShoot: 0
+      Speed: 0
+      Pierce: 0
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 6
+      Interaval: 1
+  - Icon: {fileID: 21300000, guid: 7c5b1d69d323a2c489af81f57a7a9602, type: 3}
+    Description: Decreases interval
+    Cooldown: 0
+    ViewPrefab: {fileID: 6796556165146829677, guid: c4c8cf39ebe3672468c50bd2fedcd936, type: 3}
+    EffectSetups: []
+    StatusSetups:
+    - StatusTypeId: 2
+      Value: -2
+      Duration: 0.2
+      Period: 0
+    ProjectileSetup:
+      ProjectileCount: 0
+      ProjectileAmountPerShoot: 0
+      Speed: 0
+      Pierce: 0
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 6
+      Interaval: 0.5
+  - Icon: {fileID: 21300000, guid: 7c5b1d69d323a2c489af81f57a7a9602, type: 3}
+    Description: Increases duration
+    Cooldown: 0
+    ViewPrefab: {fileID: 6796556165146829677, guid: c4c8cf39ebe3672468c50bd2fedcd936, type: 3}
+    EffectSetups: []
+    StatusSetups:
+    - StatusTypeId: 2
+      Value: -2
+      Duration: 0.4
+      Period: 0
+    ProjectileSetup:
+      ProjectileCount: 0
+      ProjectileAmountPerShoot: 0
+      Speed: 0
+      Pierce: 0
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 6
+      Interaval: 0.5
+  - Icon: {fileID: 21300000, guid: 7c5b1d69d323a2c489af81f57a7a9602, type: 3}
+    Description: 'Increases slowing '
+    Cooldown: 0
+    ViewPrefab: {fileID: 6796556165146829677, guid: c4c8cf39ebe3672468c50bd2fedcd936, type: 3}
+    EffectSetups: []
+    StatusSetups:
+    - StatusTypeId: 2
+      Value: -4
+      Duration: 0.4
+      Period: 0
+    ProjectileSetup:
+      ProjectileCount: 0
+      ProjectileAmountPerShoot: 0
+      Speed: 0
+      Pierce: 0
+      ContactRadius: 0
+      Lifetime: 0
+      OrbitRadius: 0
+      AngleSpeed: 0
+    AuraSetup:
+      Radius: 6
+      Interaval: 0.5

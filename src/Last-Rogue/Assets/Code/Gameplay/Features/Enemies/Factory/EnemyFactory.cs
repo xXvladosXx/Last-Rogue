@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Code.Common.Extensions;
 using Code.Gameplay.Features.CharacterStats;
 using Code.Gameplay.Features.Effects;
+using Code.Gameplay.Features.Enemies.Services.Wave;
 using Code.Gameplay.StaticData;
 using Code.Infrastructure.Identifiers;
 using UnityEngine;
@@ -13,12 +14,15 @@ namespace Code.Gameplay.Features.Enemies.Factory
     {
         private readonly IIdentifierService _identifierService;
         private readonly IStaticDataService _staticDataService;
+        private readonly IWaveCounter _waveCounter;
 
         public EnemyFactory(IIdentifierService identifierService, 
-            IStaticDataService staticDataService)
+            IStaticDataService staticDataService,
+            IWaveCounter waveCounter)
         {
             _identifierService = identifierService;
             _staticDataService = staticDataService;
+            _waveCounter = waveCounter;
         }
         
         public GameEntity CreateEnemy(EnemyTypeId typeId, Vector2 at)
@@ -32,7 +36,7 @@ namespace Code.Gameplay.Features.Enemies.Factory
                 case EnemyTypeId.ExplosiveGoblin:
                     return CreateSelfExplodingGoblin(at);
                 case EnemyTypeId.FastGoblin:
-                    return CreateGoblin(EnemyTypeId.Goblin, at);
+                    return CreateGoblin(EnemyTypeId.FastGoblin, at);
                 case EnemyTypeId.StrongGoblin:
                     return CreateGoblin(EnemyTypeId.StrongGoblin, at);
             }
@@ -51,13 +55,13 @@ namespace Code.Gameplay.Features.Enemies.Factory
             var config = _staticDataService.GetEnemyConfig(enemyTypeId);
             
             var baseStats = InitStats.EmptyStatDictionary()
-                .With(x => x[Stats.MaxHealth] = config.Health)
+                .With(x => x[Stats.MaxHealth] = config.Health + _waveCounter.WavesCompleted)
                 .With(x => x[Stats.Speed] = config.Speed)
-                .With(x => x[Stats.Damage] = config.Damage);
+                .With(x => x[Stats.Damage] = config.Damage + (float)_waveCounter.WavesCompleted / 2);
             
             return Code.Common.Entity.CreateEntity.Empty()
                 .AddId(_identifierService.Next())
-                .AddEnemyTypeId(EnemyTypeId.Goblin)
+                .AddEnemyTypeId(enemyTypeId)
                 .AddWorldPosition(at)
                 .AddDirection(Vector2.zero)
                 .AddBaseStats(baseStats)

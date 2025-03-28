@@ -19,5 +19,8 @@ namespace Code.Gameplay.Features.Abilities.Configs
         public List<StatusSetup> StatusSetups;
         public ProjectileSetup ProjectileSetup;
         public AuraSetup AuraSetup;
+        
+        public EntityBehaviour ChildPrefab;
+        public ProjectileSetup ChildProjectileSetup;
     }
 }

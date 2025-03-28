@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyTypeId: 3
   ViewPrefab: {fileID: 2065524602895361713, guid: 492d1416d1e06fd4aa65e5decc6b145f, type: 3}
-  Health: 25
+  Health: 100
   Speed: 0.4
   Damage: 1
   EffectSetups:
   - EffectTypeId: 1
-    Value: 15
+    Value: 25
   StatusSetups: []

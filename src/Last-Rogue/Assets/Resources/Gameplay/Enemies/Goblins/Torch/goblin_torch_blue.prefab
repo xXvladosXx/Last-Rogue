@@ -112,6 +112,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1439855031686531578, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1808899809610120747}
+    - targetCorrespondingSourceObject: {fileID: 1439855031686531578, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8695855700672872556}
     - targetCorrespondingSourceObject: {fileID: 1746527699140689763, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1617092295682948200}
@@ -127,6 +130,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1440a619dda64d9d8d6eea2ccc1134d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &3584784069562141545 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2273825916958238679, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
+  m_PrefabInstance: {fileID: 3328712635861724350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3894803551587488733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1746527699140689763, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}
@@ -170,6 +178,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityView: {fileID: 2065524602895361713}
   StatusVisuals: {fileID: 1617092295682948200}
+--- !u!114 &8695855700672872556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4452531728566216004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1133d74b8e174abf8fca869e60843723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EntityView: {fileID: 2065524602895361713}
+  Collider2D: {fileID: 3584784069562141545}
 --- !u!95 &5093300417616398717 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7538743472408995267, guid: 87dfb064bc6d941469d685bf5de17e77, type: 3}

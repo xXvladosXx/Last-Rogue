@@ -12,6 +12,8 @@ namespace Code.Gameplay.Features.Enemies.Services.Wave
         private int _currentWaveIndex;
         private Configs.Wave _currentWave;
 
+        public int WavesCompleted { get; private set; }
+        
         public float EnemySpawnInterval => _currentWave.EnemySpawnInterval;
 
         public WaveCounter(IStaticDataService staticDataService)
@@ -26,6 +28,7 @@ namespace Code.Gameplay.Features.Enemies.Services.Wave
         {
             if (_currentWave.Enemies.Count == 0)
             {
+                WavesCompleted++;
                 _currentWaveIndex++;
                 CreateWave();
             }
@@ -39,6 +42,13 @@ namespace Code.Gameplay.Features.Enemies.Services.Wave
             }
             
             return enemySpawnConfig.EnemyConfig.EnemyTypeId;
+        }
+
+        public void Cleanup()
+        {
+            _currentWaveIndex = 0;
+            WavesCompleted = 0;
+            CreateWave();
         }
 
         private void CreateWave()

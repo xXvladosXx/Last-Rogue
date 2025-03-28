@@ -21,6 +21,7 @@ namespace Code.Gameplay.Features.Enemies.Systems
         {
             foreach (var enemy in _enemies)
             {
+                enemy.ReplaceLayerMask(0);
                 enemy.isMovementAvailable = false;
                 enemy.isTurnedAlongDirection = false;
                 enemy.RemoveTargetCollectionComponents();
