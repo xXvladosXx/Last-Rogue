@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyTypeId: 2
   ViewPrefab: {fileID: 2065524602895361713, guid: 1dd35dbe040666647bf743fea50dccde, type: 3}
-  Health: 1
+  Health: 300
   Speed: 3
   Damage: 1
   EffectSetups:

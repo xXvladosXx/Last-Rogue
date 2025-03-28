@@ -20,10 +20,10 @@ MonoBehaviour:
     ViewPrefab: {fileID: 4045196373934776536, guid: 08ce9f5922001044d87f0b92a159a8c4, type: 3}
     EffectSetups:
     - EffectTypeId: 1
-      Value: 1
+      Value: 10
     StatusSetups: []
     ProjectileSetup:
-      ProjectileCount: 2
+      ProjectileCount: 6
       ProjectileAmountPerShoot: 1
       Speed: 2
       Pierce: 5
@@ -1106,6 +1106,2454 @@ MonoBehaviour:
       Value: 0.35
       Duration: 2
       Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
     ProjectileSetup:
       ProjectileCount: 1
       ProjectileAmountPerShoot: 1
@@ -1144,6 +3592,574 @@ MonoBehaviour:
       Value: 2
       Duration: 3
       Period: 1
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
+    - StatusTypeId: 1
+      Value: 0.35
+      Duration: 2
+      Period: 0.5
     ProjectileSetup:
       ProjectileCount: 1
       ProjectileAmountPerShoot: 1

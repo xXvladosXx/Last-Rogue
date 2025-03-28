@@ -23,13 +23,13 @@ MonoBehaviour:
       Value: 10
     StatusSetups: []
     ProjectileSetup:
-      ProjectileCount: 1
+      ProjectileCount: 8
       ProjectileAmountPerShoot: 0
-      Speed: 2
+      Speed: 4
       Pierce: 0
-      ContactRadius: 0.1
-      Lifetime: 3
-      OrbitRadius: 1
+      ContactRadius: 0.2
+      Lifetime: 5
+      OrbitRadius: 2
       AngleSpeed: 0
     AuraSetup:
       Radius: 0

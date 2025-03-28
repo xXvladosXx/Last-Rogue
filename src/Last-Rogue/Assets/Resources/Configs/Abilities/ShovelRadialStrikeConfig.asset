@@ -16,21 +16,21 @@ MonoBehaviour:
   Levels:
   - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
     Description: Adds radial Shovel
-    Cooldown: 3
+    Cooldown: 0.4
     ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
     EffectSetups:
     - EffectTypeId: 1
-      Value: 5
+      Value: 15
     StatusSetups: []
     ProjectileSetup:
       ProjectileCount: 1
-      ProjectileAmountPerShoot: 4
-      Speed: 5
-      Pierce: 1
+      ProjectileAmountPerShoot: 16
+      Speed: 10
+      Pierce: 20
       ContactRadius: 1
       Lifetime: 4
       OrbitRadius: 0
-      AngleSpeed: 90
+      AngleSpeed: 1080
     AuraSetup:
       Radius: 0
       Interaval: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
       AngleSpeed: 0
   - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
     Description: Increases damage & speed
-    Cooldown: 1
+    Cooldown: 0.5
     ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
     EffectSetups:
     - EffectTypeId: 1

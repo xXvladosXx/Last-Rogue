@@ -13,7 +13,35 @@ MonoBehaviour:
   m_Name: Wave Config
   m_EditorClassIdentifier: 
   Waves:
+  - EnemySpawnInterval: 0.5
+    Enemies:
+    - EnemyCount: 5
+      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
+    - EnemyCount: 15
+      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
+    - EnemyCount: 10
+      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
+  - EnemySpawnInterval: 0.1
+    Enemies:
+    - EnemyCount: 30
+      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
+    - EnemyCount: 40
+      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
+    - EnemyCount: 20
+      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
+    - EnemyCount: 40
+      EnemyConfig: {fileID: 11400000, guid: 2052d000bd1ab1244a60bc9775a08a37, type: 2}
   - EnemySpawnInterval: 0.01
+    Enemies:
+    - EnemyCount: 100
+      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
+    - EnemyCount: 100
+      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
+    - EnemyCount: 100
+      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
+    - EnemyCount: 100
+      EnemyConfig: {fileID: 11400000, guid: 2052d000bd1ab1244a60bc9775a08a37, type: 2}
+  - EnemySpawnInterval: 0.005
     Enemies:
     - EnemyCount: 300
       EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
@@ -22,66 +50,4 @@ MonoBehaviour:
     - EnemyCount: 400
       EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
     - EnemyCount: 200
-      EnemyConfig: {fileID: 11400000, guid: 2052d000bd1ab1244a60bc9775a08a37, type: 2}
-  - EnemySpawnInterval: 0.8
-    Enemies:
-    - EnemyCount: 2
-      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
-    - EnemyCount: 15
-      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
-    - EnemyCount: 5
-      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
-  - EnemySpawnInterval: 0.5
-    Enemies:
-    - EnemyCount: 5
-      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
-    - EnemyCount: 25
-      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
-    - EnemyCount: 10
-      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
-  - EnemySpawnInterval: 0.3
-    Enemies:
-    - EnemyCount: 15
-      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
-    - EnemyCount: 5
-      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
-    - EnemyCount: 25
-      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
-  - EnemySpawnInterval: 0.3
-    Enemies:
-    - EnemyCount: 25
-      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
-    - EnemyCount: 15
-      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
-    - EnemyCount: 35
-      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
-  - EnemySpawnInterval: 0.1
-    Enemies:
-    - EnemyCount: 45
-      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
-    - EnemyCount: 50
-      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
-    - EnemyCount: 60
-      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
-    - EnemyCount: 20
-      EnemyConfig: {fileID: 11400000, guid: 2052d000bd1ab1244a60bc9775a08a37, type: 2}
-  - EnemySpawnInterval: 0.05
-    Enemies:
-    - EnemyCount: 100
-      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
-    - EnemyCount: 100
-      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
-    - EnemyCount: 100
-      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
-    - EnemyCount: 100
-      EnemyConfig: {fileID: 11400000, guid: 2052d000bd1ab1244a60bc9775a08a37, type: 2}
-  - EnemySpawnInterval: 0.01
-    Enemies:
-    - EnemyCount: 100
-      EnemyConfig: {fileID: 11400000, guid: 7f06e61949a6c604fb49100a3270d476, type: 2}
-    - EnemyCount: 100
-      EnemyConfig: {fileID: 11400000, guid: 883a4a25c794d7249812fab6f2f5507d, type: 2}
-    - EnemyCount: 100
-      EnemyConfig: {fileID: 11400000, guid: 1265ca804d885a647a7a6d6fb201ca80, type: 2}
-    - EnemyCount: 100
       EnemyConfig: {fileID: 11400000, guid: 2052d000bd1ab1244a60bc9775a08a37, type: 2}
