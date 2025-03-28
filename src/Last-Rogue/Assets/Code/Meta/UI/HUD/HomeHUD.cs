@@ -1,5 +1,6 @@
 ﻿using System;
 using Code.Gameplay.Windows;
+using Code.Infrastructure.Loading;
 using Code.Infrastructure.States.GameStates;
 using Code.Infrastructure.States.StateMachine;
 using UnityEngine;
@@ -15,8 +16,6 @@ namespace Code.Meta.UI.HUD
 
         public Button StartBattleButton;
         public Button ShopButton;
-
-        private const string BATTLE_SCENE_NAME = "Meadow";
 
         [Inject]
         private void Construct(IGameStateMachine gameStateMachine,
@@ -44,6 +43,6 @@ namespace Code.Meta.UI.HUD
         }
         
         private void EnterBattleLoadingState() =>
-            _stateMachine.Enter<LoadingBattleState, string>(BATTLE_SCENE_NAME);
+            _stateMachine.Enter<LoadingBattleState, string>(Scenes.MEADOW);
     }
 }

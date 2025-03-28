@@ -6,7 +6,6 @@ namespace Code.Infrastructure.States.GameStates
 {
     public class LoadingHomeScreenState : IState
     {
-        private const string HOME_SCREEN_SCENE_NAME = "HomeScreen";
         private readonly IGameStateMachine _stateMachine;
         private readonly ISceneLoader _sceneLoader;
 
@@ -18,7 +17,7 @@ namespace Code.Infrastructure.States.GameStates
 
         public void Enter()
         {
-            _sceneLoader.LoadScene(HOME_SCREEN_SCENE_NAME, EnterHomeScreenState);
+            _sceneLoader.LoadScene(Scenes.HOME_SCREEN, EnterHomeScreenState);
         }
 
         private void EnterHomeScreenState()

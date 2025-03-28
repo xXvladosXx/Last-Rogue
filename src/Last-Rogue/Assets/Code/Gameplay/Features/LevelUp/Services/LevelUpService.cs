@@ -22,6 +22,12 @@ namespace Code.Gameplay.Features.LevelUp.Services
             UpdateLevel();
         }
 
+        public void Reset()
+        {
+            CurrentExperience = 0;
+            CurrentLevel = 1;
+        }
+        
         private void UpdateLevel()
         {
             while (true)

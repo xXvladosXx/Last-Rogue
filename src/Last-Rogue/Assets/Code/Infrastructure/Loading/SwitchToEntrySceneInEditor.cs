@@ -8,7 +8,7 @@ namespace Code.Infrastructure.Loading
     public class SwitchToEntrySceneInEditor : MonoBehaviour
     {
 #if UNITY_EDITOR
-        private const int EntrySceneIndex = 0;
+        private const int ENTRY_SCENE_INDEX = 0;
 
         private void Awake()
         {
@@ -18,7 +18,7 @@ namespace Code.Infrastructure.Loading
             foreach (GameObject root in gameObject.scene.GetRootGameObjects())
                 root.SetActive(false);
 
-            SceneManager.LoadScene(EntrySceneIndex);
+            SceneManager.LoadScene(ENTRY_SCENE_INDEX);
         }
 #endif
     }

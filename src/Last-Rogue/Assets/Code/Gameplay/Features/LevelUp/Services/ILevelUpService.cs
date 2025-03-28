@@ -6,5 +6,6 @@
         int CurrentLevel { get; }
         float ExperienceForLevelUp();
         void AddExperience(float value);
+        void Reset();
     }
 }
