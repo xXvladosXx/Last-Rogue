@@ -21,14 +21,6 @@ namespace Code.Gameplay.Features.Hero.Systems
         public void Initialize()
         {
             _abilityUpgradeService.InitializeAbility(AbilityId.VegetableBolt);
-            
-            _abilityUpgradeService.InitializeAbility(AbilityId.OrbitingMushroom);
-            
-            _abilityUpgradeService.InitializeAbility(AbilityId.GarlicAura);
-            
-            _abilityUpgradeService.InitializeAbility(AbilityId.ShovelRadialStrike);
-            
-            _abilityUpgradeService.InitializeAbility(AbilityId.ScatteringFireball);
         }
     }
 }

@@ -30,7 +30,7 @@ MonoBehaviour:
       ContactRadius: 1
       Lifetime: 4
       OrbitRadius: 0
-      AngleSpeed: 90
+      AngleSpeed: 500
     AuraSetup:
       Radius: 0
       Interaval: 0
@@ -43,10 +43,10 @@ MonoBehaviour:
       ContactRadius: 0
       Lifetime: 0
       OrbitRadius: 0
-      AngleSpeed: 0
+      AngleSpeed: 500
   - Icon: {fileID: 21300000, guid: 3ff50dea0b7a9ed4fbda1c46dff912a5, type: 3}
     Description: Reduces cooldown & increases amount
-    Cooldown: 0.1
+    Cooldown: 1
     ViewPrefab: {fileID: 123070209800205948, guid: 2f8dae630358fe84a9ac79b9bf4788f5, type: 3}
     EffectSetups:
     - EffectTypeId: 1
@@ -54,13 +54,13 @@ MonoBehaviour:
     StatusSetups: []
     ProjectileSetup:
       ProjectileCount: 1
-      ProjectileAmountPerShoot: 6
+      ProjectileAmountPerShoot: 8
       Speed: 5
       Pierce: 1
       ContactRadius: 1
       Lifetime: 4
       OrbitRadius: 0
-      AngleSpeed: 90
+      AngleSpeed: 500
     AuraSetup:
       Radius: 0
       Interaval: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
       ContactRadius: 1
       Lifetime: 4
       OrbitRadius: 0
-      AngleSpeed: 90
+      AngleSpeed: 500
     AuraSetup:
       Radius: 0
       Interaval: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
       ContactRadius: 1
       Lifetime: 4
       OrbitRadius: 0
-      AngleSpeed: 300
+      AngleSpeed: 500
     AuraSetup:
       Radius: 0
       Interaval: 0

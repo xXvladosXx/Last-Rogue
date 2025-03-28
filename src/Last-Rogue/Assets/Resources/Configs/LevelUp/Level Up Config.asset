@@ -15,7 +15,7 @@ MonoBehaviour:
   MaxLevel: 45
   ExperienceForLevel:
   - 100
-  - 100
+  - 12
   - 14
   - 22
   - 30
